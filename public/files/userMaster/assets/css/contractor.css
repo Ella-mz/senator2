@@ -1,0 +1,723 @@
+/*slider box*/
+
+.best-contractor-slider {
+  margin-top: 80px;
+  height: 460px;
+  margin-bottom: 85px;
+}
+
+.shadeBox {
+  /* box-shadow: 2px 3px 5px 4px rgb(204 204 204); */
+  box-shadow: 2px 3px 7px 3px rgb(204 204 204);
+  border-radius: 8px;
+}
+
+.quick-sale-product {
+  height: 420px;
+}
+
+.quick-sale-product .owl-stage-outer .owl-stage {
+  display: flex;
+}
+
+.quick-sale .owl-stage-outer .owl-stage .quick-sale-product .item {
+  min-height: 100%;
+}
+
+.best-contractor-slider-title {
+  text-align: center;
+  padding: 45px 0 30px 0;
+}
+
+.best-contractor-slider-title h4 {
+  font-weight: 700;
+}
+
+.best-contractore-slider-show .item {
+  width: 100%;
+}
+
+.best-contractore-slider-show .item .show-contractor-parent {
+  background: white;
+  padding: 8px;
+  border-radius: 10px;
+}
+
+.show-contractor {
+  /* background: url(../img/download\ \(3\).jpg); */
+  background-color: #402fb7;
+  /* background-repeat: no-repeat;
+  background-size: cover; */
+  position: relative;
+  height: 300px;
+  padding: 0 15px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.show-contractor .show-contractor-content {
+  position: relative;
+  top: 160px;
+  text-align: center;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.show-contractor .show-contractor-content .show-contractor-content-desc {
+  padding: 20px 0;
+}
+
+.show-contractor .show-contractor-content .contractor-img {
+  position: relative;
+  top: -40px;
+  /*right: 33%;*/
+}
+
+.show-contractor .show-contractor-content .contractor-img img {
+  border-radius: 10px;
+  width: 90px;
+  height: 85px;
+  background-color: #351fd9;
+}
+
+.contractor-hologram {
+  width: 35px;
+  position: absolute;
+  top: -150px;
+  right: 215px;
+}
+
+.contractor-hologram img {
+  /* width: 35px; */
+}
+
+.show-contractor .show-contractor-content .show-contractor-content-desc .contractor-intro {
+  margin-top: -20px;
+  padding: 0 10px;
+}
+
+.show-contractor .show-contractor-content .show-contractor-content-desc .contractor-intro .contractor-name h3 {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.show-contractor .show-contractor-content .show-contractor-content-desc .contractor-intro .contractor-name p {
+  font-size: 14px;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.787);
+}
+
+.show-contractor .show-contractor-content .show-contractor-content-desc .contractor-intro .contractore-job {
+  /* padding: 20px; */
+  margin-top: 10px;
+  background: rgb(226, 226, 226);
+  border-radius: 5px;
+}
+
+.show-contractor .show-contractor-content .show-contractor-content-desc .contractor-intro .contractore-job p {
+  padding: 3px 0;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+.show-contractor .show-contractor-content .show-contractor-content-desc .contractor-profile {
+  position: relative;
+  top: 10px;
+}
+
+.show-contractor .show-contractor-content .show-contractor-content-desc .contractor-profile a {
+  background: rgb(54, 54, 192);
+  padding: 10px 16px;
+  color: white;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  font-size: 12px;
+}
+
+@media (max-width: 1250px) {
+  .contractor-hologram {
+    width: 35px;
+    position: absolute;
+    top: -150px;
+    right: 235px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .contractor-hologram {
+    width: 35px;
+    position: absolute;
+    top: -150px;
+    right: 245px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .contractor-hologram {
+    width: 35px;
+    position: absolute;
+    top: -150px;
+    right: 210px;
+  }
+}
+
+@media (max-width: 777px) {
+  .contractor-hologram {
+    width: 35px;
+    position: absolute;
+    top: -150px;
+    right: 230px;
+  }
+  .show-contractor .show-contractor-content .contractor-img {
+    position: relative;
+    top: -40px;
+    /*right: 28%;*/
+  }
+  .show-contractor .show-contractor-content .contractor-img img {
+    border-radius: 10px;
+    width: 80px;
+  }
+}
+
+@media (max-width: 570px) {
+  .contractor-hologram {
+    width: 35px;
+    position: absolute;
+    top: -150px;
+    right: 270px;
+  }
+  .show-contractor .show-contractor-content .contractor-img {
+    position: relative;
+    top: -40px;
+    /*right: 35%;*/
+  }
+  .show-contractor .show-contractor-content .contractor-img img {
+    border-radius: 10px;
+    width: 90px;
+  }
+}
+
+@media (max-width: 530px) {
+  .contractor-hologram {
+    width: 35px;
+    position: absolute;
+    top: -150px;
+    right: 250px;
+  }
+}
+
+@media (max-width: 440px) {
+  .contractor-hologram {
+    width: 35px;
+    position: absolute;
+    top: -150px;
+    right: 235px;
+  }
+}
+
+@media (max-width: 380px) {
+  .contractor-hologram {
+    width: 35px;
+    position: absolute;
+    top: -150px;
+    right: 215px;
+  }
+}
+
+@media (max-width: 345px) {
+  .contractor-hologram {
+    width: 35px;
+    position: absolute;
+    top: -150px;
+    right: 205px;
+  }
+}
+
+@media (max-width: 330px) {
+  .contractor-hologram {
+    width: 35px;
+    position: absolute;
+    top: -150px;
+    right: 195px;
+  }
+}
+
+/*slider box*/
+
+/* contractor link box */
+
+.contractor-category {
+  margin-top: 40px;
+}
+
+/* .contractor-category .container {
+        box-shadow: 2px 3px 7px 3px rgb(204 204 204);
+    } */
+
+.contractor-category .container .contractor-category-title {
+  text-align: center;
+  padding-top: 50px;
+}
+
+.contractor-category .container .contractor-category-title span {
+  font-weight: 700;
+  font-size: 20px;
+  padding: 5px;
+  border-bottom: 3.5px solid blue;
+}
+
+.contractor-category .container .contractor-category-link {
+  text-align: center;
+  padding-top: 70px;
+}
+
+.contractor-category .container .contractor-category-link a {
+  font-size: 17px;
+  background: blue;
+  padding: 8px 18px;
+  color: white;
+  border-radius: 5px;
+}
+
+.contractor-category .container .contractor-category-link-box {
+  padding: 120px 50px 70px 50px;
+  text-align: center;
+}
+
+.contractor-category .container .contractor-category-link-box .link-box-item {
+  box-shadow: 2px 3px 7px 3px rgb(204 204 204);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.contractor-category .container .contractor-category-link-box .link-box-item a {
+  font-weight: 700;
+}
+
+/* end of contractor link box */
+
+/* all contractor */
+
+.all-contractor {
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+
+.all-contractor-header {
+  /*padding-top: 40px;
+        */
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background: rgb(241, 241, 241);
+  background: radial-gradient( circle, rgba(241, 241, 241, 1) 0%, rgba(167, 167, 167, 1) 100%);
+  box-shadow: 0px 3px 10px 1px rgb(204 204 204);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.all-contractor-header .all-contractor-header-right {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 7px;
+}
+
+.all-contractor-header .all-contractor-header-right div {
+  padding-left: 5px;
+}
+
+.all-contractor-header .all-contractor-header-right div.contractor-delete-filter {
+  color: blue;
+}
+
+.contractor-search-input {
+  display: flex;
+}
+
+.contractor-search-input input {
+  border-radius: 12px;
+  border: none;
+  box-shadow: 0px 3px 10px 1px rgb(204 204 204);
+  width: 210px;
+  height: 26px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}
+
+.contractor-search-input input::placeholder {
+  /* border-right: 1px solid black; */
+  padding: 0 20px;
+  font-size: 14px;
+  color: rgba(61, 61, 61, 0.877);
+}
+
+.contractor-search-input a i {
+  font-size: 20px;
+  color: #ddb24f;
+  margin: 3px 10px;
+}
+
+.ui-checkbox input {
+  width: 14px !important;
+}
+
+.remember-me {
+  position: relative;
+  top: -5px;
+  font-size: 13px;
+}
+
+.contractor-delete-filter a {
+  font-size: 13px;
+}
+
+.all-contractor-header-left div {
+  padding-left: 20px;
+  margin-top: 14px;
+}
+
+/* @media(max-width:1400px){
+    .all-contractor-header-left div{
+
+    }
+} */
+
+.all-contractor-header-left {
+  display: flex;
+  flex-wrap: wrap;
+  align-self: center;
+  justify-self: center;
+}
+
+.all-contractor-header-left select {
+  width: 150px;
+  height: 28px;
+  border: none;
+  /* box-shadow: 2px 3px 7px 3px rgb(204 204 204); */
+  border-radius: 5px;
+  color: rgba(0, 0, 0, 0.664);
+}
+
+.all-contractor-header-left p {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.all-contractor-header-tag {
+  padding: 20px;
+  text-align: center;
+}
+
+@media (max-width: 1200px) {
+  /* .all-contractor-header {
+    display: block;
+  } */
+  /* .all-contractor-header .all-contractor-header-right {
+    margin: auto;
+    justify-content: center;
+  } */
+  .all-contractor-header-left {
+    display: flex;
+    margin: 10px auto 0 auto;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 992px) {
+  /* .all-contractor-header .all-contractor-header-right {
+    margin: auto;
+  } */
+  .all-contractor-header-left {
+    display: flex;
+    margin: 0;
+  }
+  .all-contractor-header-left select {
+    width: 140px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* .all-contractor-header .all-contractor-header-right {
+    margin: 3px 0 20px 0;
+  } */
+}
+
+@media (max-width: 550px) {
+  .all-contractor-header {
+    display: flex;
+  }
+  /* .all-contractor-header .all-contractor-header-right div {
+    justify-content: center;
+    padding-left: 0;
+  } */
+  .contractor-delete-filter {
+    /* padding-right: 12%; */
+  }
+  .contractor-filter-arange {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 468px) {
+  .all-contractor-header {
+    padding: 10px 5px;
+  }
+  .contractor-search-input input {
+    width: 100%;
+  }
+  .contractor-search-input {
+    margin-bottom: 8px;
+  }
+}
+
+@media (max-width: 420px) {
+  .all-contractor-header .all-contractor-header-right .contractor-delete-filter {
+    align-self: center;
+  }
+  .all-contractor-header .all-contractor-header-right {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 370px) {
+  .all-contractor-header-left select {
+    width: 125px;
+  }
+}
+
+.all-contractor-show {
+  padding: 10px 20px 100px 20px;
+  box-shadow: 2px 3px 7px 3px rgb(204 204 204);
+}
+
+.all-contractor-show .item {
+  padding: 25px 15px 70px 15px;
+}
+
+.all-contractor-show .contractor-img {
+  position: relative;
+  right: 0 !important;
+}
+
+.all-contractor-show .contractor-hologram {
+  position: absolute;
+  right: 210px !important;
+}
+
+.all-contractor-more {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.all-contractor-more a {
+  box-shadow: 2px 3px 7px 3px rgb(204 204 204);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  padding: 10px 14px;
+  background-color: #fff;
+}
+
+.all-contractor-more a span {
+  font-size: 15px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.694);
+}
+
+.all-contractor-more img {
+  width: 7.5px;
+  margin: 5px;
+}
+
+@media (max-width: 1400px) {
+  .all-contractor-show .contractor-hologram {
+    position: absolute;
+    right: 160px !important;
+  }
+}
+
+@media (max-width: 1195px) {
+  .all-contractor-show .contractor-hologram {
+    position: absolute;
+    right: 185px !important;
+  }
+}
+
+@media (max-width: 992px) {
+  .all-contractor-show .contractor-hologram {
+    position: absolute;
+    right: 210px !important;
+  }
+}
+
+@media (max-width: 770px) {
+  .all-contractor-show .contractor-hologram {
+    position: absolute;
+    right: 340px !important;
+  }
+}
+
+@media (max-width: 580px) {
+  .all-contractor-show .contractor-hologram {
+    position: absolute;
+    right: 370px !important;
+  }
+}
+
+@media (max-width: 560px) {
+  .all-contractor-show .contractor-hologram {
+    position: absolute;
+    right: 350px !important;
+  }
+}
+
+@media (max-width: 538px) {
+  .all-contractor-show .contractor-hologram {
+    position: absolute;
+    right: 340px !important;
+  }
+}
+
+@media (max-width: 525px) {
+  .all-contractor-show .contractor-hologram {
+    position: absolute;
+    right: 330px !important;
+  }
+}
+
+@media (max-width: 515px) {
+  .all-contractor-show .contractor-hologram {
+    position: absolute;
+    right: 305px !important;
+  }
+}
+
+@media (max-width: 475px) {
+  .all-contractor-show .contractor-hologram {
+    position: absolute;
+    right: 280px !important;
+  }
+}
+
+@media (max-width: 460px) {
+  .all-contractor-show .contractor-hologram {
+    position: absolute;
+    right: 270px !important;
+  }
+}
+
+@media (max-width: 445px) {
+  .all-contractor-show .contractor-hologram {
+    position: absolute;
+    right: 240px !important;
+  }
+}
+
+@media (max-width: 415px) {
+  .all-contractor-show .contractor-hologram {
+    position: absolute;
+    right: 220px !important;
+  }
+}
+
+@media (max-width: 395px) {
+  .all-contractor-show .contractor-hologram {
+    position: absolute;
+    right: 230px !important;
+  }
+  .all-contractor .container {
+    box-shadow: 2px 3px 7px 3px rgb(204 204 204);
+    padding: 0px 20px 40px 20px;
+  }
+  .all-contractor-show .item {
+    padding: 25px 10px 70px 10px;
+  }
+}
+
+@media (max-width: 377px) {
+  .all-contractor-show .contractor-hologram {
+    position: absolute;
+    right: 220px !important;
+  }
+}
+
+@media (max-width: 365px) {
+  .all-contractor-show .contractor-hologram {
+    position: absolute;
+    right: 195px !important;
+  }
+}
+
+@media (max-width: 350px) {
+  .all-contractor-show .contractor-hologram {
+    position: absolute;
+    right: 200px !important;
+  }
+  .all-contractor-show .item {
+    padding: 25px 5px 70px 5px;
+  }
+}
+
+@media (max-width: 330px) {
+  .all-contractor-show .contractor-hologram {
+    position: absolute;
+    right: 190px !important;
+  }
+  .all-contractor-show .item {
+    padding: 25px 5px 70px 5px;
+  }
+}
+
+/* end of all contractor */
+
+.skil {
+  border: 1px solid black;
+  border-radius: 4px;
+  padding-bottom: 200px;
+  margin-bottom: 100px;
+}
+
+.skil .skil-show .skil-heder-title {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.959);
+}
+
+.skil .skil-show .skil-heder-title h3 {
+  padding: 15px 120px;
+}
+
+.skil .skil-show .skil-title-score {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.473);
+  padding: 0 80px;
+}
+
+.skil .skil-show .skil-title-score p {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.63);
+  /* border-bottom: 1px solid black; */
+  padding: 15px 0;
+}
+
+.skil .skil-show .skil-title-score img {
+  width: 35px;
+  padding: 0 2px;
+}

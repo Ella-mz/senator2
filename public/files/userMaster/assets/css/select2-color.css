@@ -1,0 +1,13 @@
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+  background-color: #ddb24f;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice {
+  background-color: #ddb24f;
+  color: #fff;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
+  color: #fff;
+
+}

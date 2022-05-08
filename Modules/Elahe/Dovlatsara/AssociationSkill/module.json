@@ -1,0 +1,13 @@
+{
+    "name": "AssociationSkill",
+    "alias": "associationskill",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\AssociationSkill\\Providers\\AssociationSkillServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

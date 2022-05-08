@@ -1,0 +1,185 @@
+@font-face {
+  font-family: IRANSans;
+  font-style: normal;
+  src: url(../fonts/IRANSansWeb/IRANSansWeb.eot);
+  src: url(../fonts/IRANSansWeb/IRANSansWeb.eot) format("embedded-opentype"), url(../fonts/IRANSansWeb/IRANSansWeb.woff2) format("woff2"), url(../fonts/IRANSansWeb/IRANSansWeb.woff) format("woff"), url(../fonts/IRANSansWeb/IRANSansWeb.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: Samim;
+  font-style: normal;
+  src: url(../fonts/samim/Samim.eot);
+  src: url(../fonts/samim/Samim.eot) format("embedded-opentype"), url(../fonts/samim/Samim.woff2) format("woff2"), url(../fonts/samim/Samim.woff) format("woff"), url(../fonts/samim/Samim.ttf) format("truetype");
+  src: url(../fonts/samim/Farsi-Digits/Samim-FD.eot);
+  src: url(../fonts/samim/Farsi-Digits/Samim-FD.eot) format("embedded-opentype"), url(../fonts/samim/Farsi-Digits/Samim-FD.woff2) format("woff2"), url(../fonts/samim/Farsi-Digits/Samim-FD.woff) format("woff"), url(../fonts/samim/Farsi-Digits/Samim-FD.ttf) format("truetype");
+}
+
+body {
+  font-family: 'Samim';
+  background-color: #fff;
+  font-size: 100%;
+  direction: rtl;
+  box-sizing: border-box;
+}
+
+body a:focus {
+  outline: 0;
+}
+
+body .container-fluid {
+  padding: 0;
+  margin: 0;
+}
+
+section.shipping-time {
+  height: 200px;
+  padding: 2rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section.shipping-time div.owl-dots {
+  display: none;
+}
+
+section.shipping-time div.owl-nav button.owl-prev,
+section.shipping-time div.owl-nav button.owl-next {
+  position: absolute;
+  top: 10px;
+  font-size: 3rem;
+  width: 30px;
+  height: 150px;
+  z-index: 10;
+  border: 1px solid rgba(151, 151, 151, 0.75);
+  margin: 0;
+}
+
+section.shipping-time div.owl-nav button.owl-prev:hover, section.shipping-time div.owl-nav button.owl-prev:focus,
+section.shipping-time div.owl-nav button.owl-next:hover,
+section.shipping-time div.owl-nav button.owl-next:focus {
+  background-color: rgba(62, 63, 63, 0.2);
+  color: #00bfd6;
+  border: none;
+}
+
+section.shipping-time div.owl-nav button.owl-prev:focus, section.shipping-time div.owl-nav button.owl-prev:active,
+section.shipping-time div.owl-nav button.owl-next:focus,
+section.shipping-time div.owl-nav button.owl-next:active {
+  border: none;
+  outline: none;
+  border-color: transparent !important;
+}
+
+section.shipping-time div.owl-nav button.owl-prev {
+  right: 0;
+}
+
+section.shipping-time div.owl-nav button.owl-next {
+  left: 0;
+}
+
+section.shipping-time div.owl-nav button.owl-next.disabled,
+section.shipping-time div.owl-nav button.owl-prev.disabled {
+  opacity: 0.4;
+}
+
+section.shipping-time div.owl-nav button.owl-next.disabled:hover, section.shipping-time div.owl-nav button.owl-next.disabled:focus,
+section.shipping-time div.owl-nav button.owl-prev.disabled:hover,
+section.shipping-time div.owl-nav button.owl-prev.disabled:focus {
+  color: rgba(151, 151, 151, 0.75);
+}
+
+section.shipping-time div.owl-carousel.owl-theme {
+  width: 100%;
+}
+
+section.shipping-time div.owl-carousel.owl-theme div.owl-stage-outer {
+  width: calc(100% - 90px);
+  position: relative;
+  right: 45px;
+}
+
+section.shipping-time div.owl-carousel.owl-theme div.owl-stage-outer div.owl-stage div.owl-item div.slide-item.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  height: 170px;
+  margin: 0 0.5rem;
+}
+
+section.shipping-time div.owl-carousel.owl-theme div.owl-stage-outer div.owl-stage div.owl-item div.slide-item.item h5.shipping-time__day-name {
+  color: #3e3f3f;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+section.shipping-time div.owl-carousel.owl-theme div.owl-stage-outer div.owl-stage div.owl-item div.slide-item.item h5.holiday {
+  color: #ef5662;
+}
+
+section.shipping-time div.owl-carousel.owl-theme div.owl-stage-outer div.owl-stage div.owl-item div.slide-item.item span.shipping-time__date {
+  font-size: 14px;
+  color: #979797;
+}
+
+section.shipping-time div.owl-carousel.owl-theme div.owl-stage-outer div.owl-stage div.owl-item div.slide-item.item ul.shipping-time__hour-list {
+  display: flex;
+}
+
+section.shipping-time div.owl-carousel.owl-theme div.owl-stage-outer div.owl-stage div.owl-item div.slide-item.item ul.shipping-time__hour-list li.shipping-time__hour-list-item {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 140px;
+}
+
+section.shipping-time div.owl-carousel.owl-theme div.owl-stage-outer div.owl-stage div.owl-item div.slide-item.item ul.shipping-time__hour-list li.shipping-time__hour-list-item:nth-child(1) > label.shipping-time-hour-list-label {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+section.shipping-time div.owl-carousel.owl-theme div.owl-stage-outer div.owl-stage div.owl-item div.slide-item.item ul.shipping-time__hour-list li.shipping-time__hour-list-item:last-child > label.shipping-time-hour-list-label {
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+section.shipping-time div.owl-carousel.owl-theme div.owl-stage-outer div.owl-stage div.owl-item div.slide-item.item ul.shipping-time__hour-list li.shipping-time__hour-list-item input[name="shipping-time-input"] {
+  display: none;
+}
+
+section.shipping-time div.owl-carousel.owl-theme div.owl-stage-outer div.owl-stage div.owl-item div.slide-item.item ul.shipping-time__hour-list li.shipping-time__hour-list-item input[name="shipping-time-input"]:checked + label.shipping-time-hour-list-label {
+  border: 3px solid #00bfd6;
+  box-shadow: 0 8px 13px -8px rgba(0, 191, 214, 0.3);
+  background-color: rgba(0, 191, 214, 0.03);
+  cursor: default;
+}
+
+section.shipping-time div.owl-carousel.owl-theme div.owl-stage-outer div.owl-stage div.owl-item div.slide-item.item ul.shipping-time__hour-list li.shipping-time__hour-list-item input[name="shipping-time-input"]:checked + label.shipping-time-hour-list-label
+> span.shipping-time__hour-list-scope {
+  color: #00bfd6;
+}
+
+section.shipping-time div.owl-carousel.owl-theme div.owl-stage-outer div.owl-stage div.owl-item div.slide-item.item ul.shipping-time__hour-list li.shipping-time__hour-list-item label.shipping-time-hour-list-label {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid rgba(151, 151, 151, 0.75);
+  padding: 1rem 0.5rem;
+  position: relative;
+  cursor: pointer;
+}
+
+section.shipping-time div.owl-carousel.owl-theme div.owl-stage-outer div.owl-stage div.owl-item div.slide-item.item ul.shipping-time__hour-list li.shipping-time__hour-list-item label.shipping-time-hour-list-label span.shipping-time__hour-list-scope {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+section.shipping-time div.owl-carousel.owl-theme div.owl-stage-outer div.owl-stage div.owl-item div.slide-item.item ul.shipping-time__hour-list li.shipping-time__hour-list-item label.shipping-time-hour-list-label span.shipping-time__hour-list-price {
+  font-size: 14px;
+  color: #979797;
+}
+/*# sourceMappingURL=slider.css.map */

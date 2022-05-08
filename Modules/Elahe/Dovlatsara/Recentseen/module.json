@@ -1,0 +1,13 @@
+{
+    "name": "Recentseen",
+    "alias": "recentseen",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\Recentseen\\Providers\\RecentseenServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

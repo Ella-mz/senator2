@@ -1,0 +1,13 @@
+{
+    "name": "ActivityRange",
+    "alias": "activityrange",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\ActivityRange\\Providers\\ActivityRangeServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

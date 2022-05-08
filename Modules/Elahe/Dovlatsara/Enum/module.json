@@ -1,0 +1,13 @@
+{
+    "name": "Enum",
+    "alias": "enum",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\Enum\\Providers\\EnumServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

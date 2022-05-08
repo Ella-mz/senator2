@@ -1,0 +1,13 @@
+{
+    "name": "EnumType",
+    "alias": "enumtype",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\EnumType\\Providers\\EnumTypeServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

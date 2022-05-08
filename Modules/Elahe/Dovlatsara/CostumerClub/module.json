@@ -1,0 +1,13 @@
+{
+    "name": "CostumerClub",
+    "alias": "costumerclub",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\CostumerClub\\Providers\\CostumerClubServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

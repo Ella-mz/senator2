@@ -1,0 +1,670 @@
+@font-face {
+  font-family: IRANSans;
+  font-style: normal;
+  src: url(../fonts/IRANSansWeb/IRANSansWeb.eot);
+  src: url(../fonts/IRANSansWeb/IRANSansWeb.eot) format("embedded-opentype"), url(../fonts/IRANSansWeb/IRANSansWeb.woff2) format("woff2"), url(../fonts/IRANSansWeb/IRANSansWeb.woff) format("woff"), url(../fonts/IRANSansWeb/IRANSansWeb.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: Samim;
+  font-style: normal;
+  src: url(../fonts/samim/Samim.eot);
+  src: url(../fonts/samim/Samim.eot) format("embedded-opentype"), url(../fonts/samim/Samim.woff2) format("woff2"), url(../fonts/samim/Samim.woff) format("woff"), url(../fonts/samim/Samim.ttf) format("truetype");
+  src: url(../fonts/samim/Farsi-Digits/Samim-FD.eot);
+  src: url(../fonts/samim/Farsi-Digits/Samim-FD.eot) format("embedded-opentype"), url(../fonts/samim/Farsi-Digits/Samim-FD.woff2) format("woff2"), url(../fonts/samim/Farsi-Digits/Samim-FD.woff) format("woff"), url(../fonts/samim/Farsi-Digits/Samim-FD.ttf) format("truetype");
+}
+
+body {
+  font-family: 'Samim';
+  background-color: #fff;
+  font-size: 100%;
+  direction: rtl;
+  box-sizing: border-box;
+}
+
+body a:focus {
+  outline: 0;
+}
+
+body .container-fluid {
+  padding: 0;
+  margin: 0;
+}
+
+section.dolatsara-slider-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  margin: 2rem 0;
+  margin: 0;
+  height: 90vh;
+  background-image: url("./../images/01.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+section.dolatsara-slider-section div.dolatsara-slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+section.dolatsara-slider-section div.dolatsara-slider div.swiper {
+  width: 80%;
+}
+
+section.dolatsara-slider-section div.dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide {
+  box-shadow: inset 0 0 4px #b8b8b8;
+  border-radius: 12px;
+  background-color: white;
+  background-image: linear-gradient(rgba(74, 31, 97, 0.15), transparent 10%);
+  transition: all 0.3ms ease-in;
+  transform: scale(0.75);
+}
+
+section.dolatsara-slider-section div.dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide .slide-item-parent {
+  padding: 1rem 2rem;
+  height: 350px;
+  text-decoration: none;
+}
+
+section.dolatsara-slider-section div.dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide .slide-item-parent div.card-body-slider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #b8b8b8;
+  padding-bottom: 0.5rem;
+  margin: 0 1.5rem;
+  width: calc(100% - 3rem);
+}
+
+section.dolatsara-slider-section div.dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide .slide-item-parent div.card-body-slider .image-placeholder {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  height: 120px;
+  width: 150px;
+}
+
+section.dolatsara-slider-section div.dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide .slide-item-parent div.card-body-slider .image-placeholder img {
+  border-radius: 0.5rem;
+  width: 100%;
+  height: 100%;
+}
+
+section.dolatsara-slider-section div.dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide .slide-item-parent div.card-body-slider h4.item-slide__title {
+  color: #4a1f61;
+  font-weight: 700;
+  padding: 1rem 0;
+  max-width: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  padding: 0.375rem 0;
+}
+
+section.dolatsara-slider-section div.dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide .slide-item-parent div.card-footer-slider {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: calc(100% - 3rem);
+  height: 50px;
+  margin: 0 1.5rem;
+}
+
+section.dolatsara-slider-section div.dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide .slide-item-parent div.card-footer-slider div.footer-column {
+  padding: 0 0.5rem;
+  text-align: center;
+}
+
+section.dolatsara-slider-section div.dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide .slide-item-parent div.card-footer-slider div.footer-column .score-icon {
+  color: #4a1f61;
+  width: 16px;
+  height: 16px;
+}
+
+section.dolatsara-slider-section div.dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide .slide-item-parent .item-slide__sub-title {
+  color: #b8b8b8;
+  font-size: 14px;
+  text-align: center;
+  max-width: 120px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  padding: 0.375rem 0;
+}
+
+section.dolatsara-slider-section div.dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide-prev,
+section.dolatsara-slider-section div.dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide-next {
+  transform: scale(0.88);
+}
+
+section.dolatsara-slider-section div.dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide-active {
+  transform: scale(1);
+}
+
+section.several-row-slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  margin: 2rem 0;
+  background-image: url("./../images/03.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+section.several-row-slider h2.several-row-slider__title {
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+section.several-row-slider div.dolatsara-slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+section.several-row-slider div.dolatsara-slider div.swiper {
+  width: 80%;
+}
+
+section.several-row-slider div.dolatsara-slider div.swiper div.swiper-wrapper {
+  flex-direction: row;
+  align-items: center;
+}
+
+section.several-row-slider div.dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide {
+  box-shadow: inset 0 0 4px #b8b8b8;
+  border-radius: 12px;
+  background-color: white;
+  height: calc((100% - 30px) / 2);
+  margin-top: 30px;
+}
+
+section.several-row-slider div.dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide .slide-item-parent {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+section.several-row-slider div.dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide .slide-item-parent .image-placeholder {
+  border-top-right-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
+  height: 150px;
+  width: 100%;
+}
+
+section.several-row-slider div.dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide .slide-item-parent .image-placeholder img {
+  border-top-right-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
+  width: 100%;
+  height: 100%;
+}
+
+section.several-row-slider div.dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide .slide-item-parent .content-box {
+  padding: 1rem 1rem 0;
+  width: calc(100% - 2rem);
+}
+
+section.several-row-slider div.dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide .slide-item-parent .content-box h3.title-item {
+  font-weight: 600;
+  color: black;
+  text-align: center;
+  max-width: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  padding: 0.375rem 0;
+}
+
+section.several-row-slider div.dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide .slide-item-parent .content-box div.code-name-advertising-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border-bottom: 1px solid #b8b8b8;
+  margin-top: 1rem;
+}
+
+section.several-row-slider div.dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide .slide-item-parent .content-box div.code-name-advertising-box p.code-advertising,
+section.several-row-slider div.dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide .slide-item-parent .content-box div.code-name-advertising-box p.name-advertising {
+  margin: 0.5rem 0;
+  color: #b8b8b8;
+  font-size: 80%;
+}
+
+section.several-row-slider div.dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide .slide-item-parent .content-box div.card-footer-slider {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 1rem 0;
+}
+
+section.several-row-slider div.dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide .slide-item-parent .content-box div.card-footer-slider p.home-advertising,
+section.several-row-slider div.dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide .slide-item-parent .content-box div.card-footer-slider p.location-advertising {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #b8b8b8;
+  background-color: #eeeeee;
+  border-radius: 8px;
+  padding: 0.375rem;
+  font-size: 80%;
+}
+
+section.several-row-slider div.dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide .slide-item-parent .content-box div.card-footer-slider p.home-advertising svg.footer-icon,
+section.several-row-slider div.dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide .slide-item-parent .content-box div.card-footer-slider p.location-advertising svg.footer-icon {
+  margin-left: 0.375rem;
+}
+
+section.several-row-slider div.dolatsara-slider div.swiper div.swiper-pagination.swiper-pagination-bullets {
+  display: none;
+}
+
+section.single-row-slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  margin: 2rem 0;
+}
+
+section.single-row-slider h2.single-row-slider__title {
+  width: 90%;
+  text-align: center;
+  border-bottom: 1px solid #b8b8b8;
+  line-height: 0.1em;
+  margin: 10px 0 20px;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+section.single-row-slider h2.single-row-slider__title span {
+  background: #fff;
+  padding: 0 10px;
+}
+
+section.single-row-slider div.dolatsara-slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+section.single-row-slider div.dolatsara-slider div.swiper {
+  width: 80%;
+}
+
+section.single-row-slider div.dolatsara-slider div.swiper div.swiper-wrapper {
+  flex-direction: row;
+  align-items: center;
+}
+
+section.single-row-slider div.dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide {
+  box-shadow: inset 0 0 4px #b8b8b8;
+  border-radius: 12px;
+  background-color: white;
+  height: calc((100% - 30px) / 2);
+  margin-top: 30px;
+}
+
+section.single-row-slider div.dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide .slide-item-parent {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+section.single-row-slider div.dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide .slide-item-parent .image-placeholder {
+  border-top-right-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
+  height: 150px;
+  width: 100%;
+}
+
+section.single-row-slider div.dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide .slide-item-parent .image-placeholder img {
+  border-top-right-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
+  width: 100%;
+  height: 100%;
+}
+
+section.single-row-slider div.dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide .slide-item-parent .content-box {
+  width: calc(100% - 2rem);
+  padding: 1rem 1rem 0;
+}
+
+section.single-row-slider div.dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide .slide-item-parent .content-box h3.title-item {
+  font-weight: 600;
+  color: black;
+  text-align: center;
+  max-width: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  padding: 0.375rem 0;
+}
+
+section.single-row-slider div.dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide .slide-item-parent .content-box div.code-name-advertising-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border-bottom: 1px solid #b8b8b8;
+  margin-top: 1rem;
+}
+
+section.single-row-slider div.dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide .slide-item-parent .content-box div.code-name-advertising-box p.code-advertising,
+section.single-row-slider div.dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide .slide-item-parent .content-box div.code-name-advertising-box p.name-advertising {
+  margin: 1rem;
+  color: #b8b8b8;
+  font-size: 80%;
+}
+
+section.single-row-slider div.dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide .slide-item-parent .content-box div.card-footer-slider {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 1rem 0;
+}
+
+section.single-row-slider div.dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide .slide-item-parent .content-box div.card-footer-slider p.home-advertising,
+section.single-row-slider div.dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide .slide-item-parent .content-box div.card-footer-slider p.location-advertising {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #b8b8b8;
+  background-color: #eeeeee;
+  border-radius: 8px;
+  padding: 0.375rem;
+  font-size: 80%;
+}
+
+section.single-row-slider div.dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide .slide-item-parent .content-box div.card-footer-slider p.home-advertising svg.footer-icon,
+section.single-row-slider div.dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide .slide-item-parent .content-box div.card-footer-slider p.location-advertising svg.footer-icon {
+  margin-left: 0.375rem;
+}
+
+section.single-row-slider div.dolatsara-slider div.swiper div.swiper-pagination.swiper-pagination-bullets {
+  display: none;
+}
+
+section.album-slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  margin: 2rem 0;
+  background-image: url("./../images/02.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+section.album-slider .dolatsara-slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+section.album-slider .dolatsara-slider div.swiper {
+  padding: 3rem 0;
+  width: 80%;
+}
+
+section.album-slider .dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide {
+  box-shadow: 0 0 4px #b8b8b8;
+  border-radius: 12px;
+  background-color: white;
+  transition: all 0.3ms ease-in;
+  transform: scale(1);
+  z-index: 10;
+  margin-top: 3rem;
+}
+
+section.album-slider .dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide .slide-item-parent {
+  height: 350px;
+  text-decoration: none;
+}
+
+section.album-slider .dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide .slide-item-parent .image-placeholder {
+  border-top-right-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
+  height: 200px;
+  width: 100%;
+  font-size: .5rem;
+  text-align: center;
+}
+
+section.album-slider .dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide .slide-item-parent .image-placeholder img {
+  border-top-right-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
+  width: 100%;
+  height: 100%;
+}
+
+section.album-slider .dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide .slide-item-parent .card-body-slider {
+  padding: 0.5rem 1rem 0;
+  height: 150px;
+}
+
+section.album-slider .dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide .slide-item-parent .card-body-slider .card-body-child {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border-bottom: 1px solid #b8b8b8;
+  padding: 0.5rem 0;
+}
+
+section.album-slider .dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide .slide-item-parent .card-body-slider .card-body-child h3 {
+  color: #4a1f61;
+  font-size: 1.15rem;
+  max-width: 50%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  padding: 0.375rem 0;
+  font-weight: 600;
+  margin-left: 0.5rem;
+}
+
+section.album-slider .dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide .slide-item-parent .card-body-slider .card-body-child p.title-article {
+  color: #b8b8b8;
+  font-size: 14px;
+  max-width: 50%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  padding: 0.375rem 0;
+}
+
+section.album-slider .dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide .slide-item-parent .card-body-slider .card-body-child .image-placeholder {
+  border-radius: 50%;
+  height: 45px;
+  width: 50px;
+  border: 1px solid rgba(184, 184, 184, 0.5);
+  margin-left: 0.5rem;
+}
+
+section.album-slider .dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide .slide-item-parent .card-body-slider .card-body-child .image-placeholder img {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+}
+
+section.album-slider .dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide .slide-item-parent .card-body-slider p {
+  color: #b8b8b8;
+  font-size: 90%;
+  margin-left: 0.5rem;
+  padding: 0.5rem 0;
+  line-height: 1.1;
+}
+
+section.album-slider .dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide .slide-item-parent .card-body-slider p small {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+section.album-slider .dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide-prev,
+section.album-slider .dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide-next {
+  transform: scale(1.07);
+  z-index: 100;
+}
+
+section.album-slider .dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide-active {
+  transform: scale(1.25);
+  z-index: 1000;
+  box-shadow: 0 0 4px #b8b8b8;
+}
+
+section.tab-navigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  margin: 2rem 0;
+}
+
+section.tab-navigation .tab-navigation__tabs {
+  display: flex;
+  justify-content: flex-start;
+  width: 90%;
+}
+
+section.tab-navigation .tab-navigation__tabs .tab-navigation__tab-link {
+  text-decoration: none;
+  box-shadow: 0 0 4px #b8b8b8;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+section.tab-navigation .tab-navigation__tabs .tab-navigation__tab-link .tab-navigation__tab-btn {
+  font-family: "Samim";
+  font-size: 14px;
+  background-color: white;
+  border: 0;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  width: 100px;
+  max-width: 120px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  padding: 0.375rem;
+}
+
+section.tab-navigation .tab-navigation__tabs .tab-navigation__tab-link .tab-navigation__tab-btn.selected {
+  background-color: #eeeeee;
+  position: relative;
+}
+
+section.tab-navigation .tab-navigation__tabs .tab-navigation__tab-link .tab-navigation__tab-btn.selected::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #4a1f61;
+  height: 4px;
+  width: 100%;
+}
+
+section.tab-navigation .tab-navigation__content {
+  width: 90%;
+  line-height: 1.5;
+  background-color: #eeeeee;
+  border-radius: 12px;
+  border-top-right-radius: 0;
+  box-shadow: 0 2px 4px #b8b8b8;
+  display: none;
+}
+
+section.tab-navigation .tab-navigation__content p {
+  padding: 1rem;
+  min-height: 30px;
+}
+
+section.best-categorie-icon {
+  display: none;
+}
+
+section.banner-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  margin: 2rem 0;
+  margin: 0;
+  position: relative;
+  margin-bottom: 200px;
+}
+
+section.banner-content .grid-boxes-section {
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  background-color: rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  position: absolute;
+  bottom: -100px;
+}
+
+section.banner-content .grid-boxes-section .single-box {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section.banner-content .grid-boxes-section .single-box:first-child {
+  border-top-right-radius: 8px;
+}
+
+section.banner-content .grid-boxes-section .single-box:last-child {
+  border-bottom-left-radius: 8px;
+}
+
+section.banner-content .grid-boxes-section .single-box:nth-child(5) {
+  border-top-left-radius: 8px;
+}
+
+section.banner-content .grid-boxes-section .single-box:nth-child(6) {
+  border-bottom-right-radius: 8px;
+}
+
+section.banner-content .grid-boxes-section .single-box:nth-child(2n) {
+  background-color: rgba(184, 184, 184, 0.5);
+}
+
+section.banner-content .grid-boxes-section .single-box:nth-child(2n-1) {
+  background-color: rgba(238, 238, 238, 0.5);
+}
+
+section.banner-content .grid-boxes-section .single-box:nth-child(3n) {
+  background-color: rgba(74, 31, 97, 0.5);
+}
+
+section.banner-content .grid-boxes-section .single-box p.box-title {
+  color: #f4f9f9;
+  text-shadow: 0 -2px rgba(0, 0, 0, 0.2);
+}
+
+section.dropdown-section {
+  display: none;
+}
+/*# sourceMappingURL=slider2.css.map */

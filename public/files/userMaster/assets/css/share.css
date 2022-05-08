@@ -1,0 +1,121 @@
+.share-btn i.inside-icon {
+  opacity: 0;
+  font-size: 20px;
+  color: #ffffff;
+  will-change: transform;
+  -webkit-transform: scale(0.1);
+  transform: scale(0.1);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  margin: 0 4px;
+  position: relative;
+}.share-btn i.inside-icon a{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    right: 0;
+    top: 0;
+}
+
+.btn_wrap {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  overflow: hidden;
+  cursor: pointer;
+  width: 240px;
+
+
+
+
+  will-change: transform;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+
+
+  background-color: #2a2929;
+  color: #fff;
+  width: inherit;
+  height: -webkit-fill-available;
+  border: none;
+}
+
+.btn_wrap:hover {
+  transition-delay: .4s;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.share-btn span {
+  position: absolute;
+  z-index: 99;
+  width: 240px;
+  height: 40px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #2a2929;
+  background-color: #fff;
+  padding: 9px 8px;
+  -webkit-transition: all 1.2s ease;
+  transition: all 1.2s ease; border: none;
+
+}.share-btn span i{
+    margin-right: 4px;
+    font-size: 16px;
+}
+
+.containers i:nth-of-type(1) {
+  -webkit-transition-delay: 1.1s;
+  transition-delay: 1.1s;
+    color: #fff;
+}
+
+.containers i:nth-of-type(2) {
+  -webkit-transition-delay: 0.9s;
+  transition-delay: 0.9s;
+    color: #fff;
+
+}
+
+.containers i:nth-of-type(3) {
+  -webkit-transition-delay: 0.7s;
+  transition-delay: 0.7s;
+    color: #fff;
+
+}
+
+.containers i:nth-of-type(4) {
+  -webkit-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+    color: #fff;
+
+}
+
+.btn_wrap:hover span {
+  -webkit-transition-delay: 0.25s;
+  transition-delay: 0.25s;
+  -webkit-transform: translateX(-280px);
+  transform: translateX(-280px);
+}
+
+.btn_wrap:hover i {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.dr {
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+  width: 100px;
+}

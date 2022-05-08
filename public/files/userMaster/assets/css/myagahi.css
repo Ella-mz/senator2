@@ -1,0 +1,79 @@
+a:hover {
+    color: inherit;
+}
+
+.my-agahi {
+    margin-top: 100px;
+}
+
+.my-agahi-title {
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.my-agahi-title h1 {
+    font-weight: 700;
+    font-size: 32px;
+}
+
+.agahi-btn {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+    padding-bottom: 4px;
+    flex-wrap: wrap;
+}
+
+.agahi-btn div {}
+
+.agahi-btn a {
+    /* padding: 2px 12px; */
+    width: 68px;
+    padding: 3px 0;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    color: white;
+    font-size: 13px;
+    line-height: 1.9;
+    margin: 6px 12px;
+    /* box-shadow: 2px 3px 10px 3px rgb(204 204 204); */
+}
+
+.agahi-btn .agahi-btn-text a {}
+
+.agahi-btn a i {
+    color: rgb(63, 63, 63);
+    font-size: 19px;
+}
+
+.agahi-btn .view {
+    background: rgb(61, 32, 228);
+}
+
+.agahi-btn .edit {
+    background: #7d7d7d;
+}
+
+.agahi-btn .delete {
+    color: rgb(212, 51, 51);
+}
+
+.agahi-btn .green-bg {
+    background: rgb(120, 179, 61);
+}
+
+.agahi-btn .blue-bg {
+    background: #0d6efd;
+}
+
+.agahi-btn-text div {
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    height: 24px;
+}

@@ -1,0 +1,85 @@
+@media screen and ( max-width: 400px ) {
+
+    li.page-item {
+
+        display: none;
+    }
+
+    .page-item:first-child,
+    .page-item:nth-child( 2 ),
+    .page-item:nth-last-child( 2 ),
+    .page-item:last-child,
+    .page-item.active,
+    .page-item.disabled {
+
+        display: block;
+    }
+}
+@media screen and ( max-width: 776px ) {
+
+    li.page-item {
+
+        display: none;
+    }
+
+    .page-item:first-child,
+    .page-item:nth-child( 1 ),
+    .page-item:nth-child( 2 ),
+    .page-item:nth-child( 3 ),
+    .page-item:nth-child( 4 ),
+    .page-item:nth-child( 5 ),
+    .page-item:nth-child( 6 ),
+    .page-item:nth-child( 7 ),
+    .page-item:nth-last-child( 1 ),
+    .page-item:nth-last-child( 2 ),
+    .page-item:nth-last-child( 3 ),
+    .page-item:last-child,
+    .page-item.active,
+    .page-item.disabled {
+
+        display: block;
+    }
+}
+@media screen and ( max-width: 576px ) {
+
+    li.page-item {
+
+        display: none;
+    }
+
+    .page-item:first-child,
+    .page-item:nth-child( 1 ),
+    .page-item:nth-child( 2 ),
+    .page-item:nth-child( 3 ),
+    .page-item:nth-last-child( 2 ),
+    .page-item:last-child,
+    .page-item.active,
+    .page-item.disabled {
+
+        display: block;
+    }
+}
+@media screen and ( max-width: 2974px ) {
+
+    li.page-item {
+
+        display: none;
+    }
+    .page-item:first-child,
+    .page-item:nth-child( 1 ),
+    .page-item:nth-child( 2 ),
+    .page-item:nth-child( 3 ),
+    .page-item:nth-child( 4 ),
+    .page-item:nth-child( 5 ),
+    .page-item:nth-child( 6 ),
+    .page-item:nth-child( 7 ),
+    .page-item:nth-last-child( 1 ),
+    .page-item:nth-last-child( 2 ),
+    .page-item:nth-last-child( 3 ),
+    .page-item:last-child,
+    .page-item.active,
+    .page-item.disabled {
+
+        display: block;
+    }
+}

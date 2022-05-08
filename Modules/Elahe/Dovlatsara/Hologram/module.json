@@ -1,0 +1,13 @@
+{
+    "name": "Hologram",
+    "alias": "hologram",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\Hologram\\Providers\\HologramServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

@@ -1,0 +1,25 @@
+@font-face {
+  font-family: IRANSans;
+  font-style: normal;
+  src: url(../fonts/IRANSansWeb/IRANSansWeb.eot);
+  src: url(../fonts/IRANSansWeb/IRANSansWeb.eot) format("embedded-opentype"),
+    url(../fonts/IRANSansWeb/IRANSansWeb.woff2) format("woff2"),
+    url(../fonts/IRANSansWeb/IRANSansWeb.woff) format("woff"),
+    url(../fonts/IRANSansWeb/IRANSansWeb.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: Samim;
+  font-style: normal;
+  src: url(../fonts/samim/Samim.eot);
+  src: url(../fonts/samim/Samim.eot) format("embedded-opentype"),
+      url(../fonts/samim/Samim.woff2)format("woff2"),
+      url(../fonts/samim/Samim.woff)format("woff"),
+      url(../fonts/samim/Samim.ttf) format("truetype");
+
+  src: url(../fonts/samim/Farsi-Digits/Samim-FD.eot);
+  src: url(../fonts/samim/Farsi-Digits/Samim-FD.eot) format("embedded-opentype"),
+      url(../fonts/samim/Farsi-Digits/Samim-FD.woff2)format("woff2"),
+      url(../fonts/samim/Farsi-Digits/Samim-FD.woff)format("woff"),
+      url(../fonts/samim/Farsi-Digits/Samim-FD.ttf) format("truetype");
+}

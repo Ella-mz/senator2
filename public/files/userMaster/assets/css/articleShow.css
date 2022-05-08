@@ -1,0 +1,93 @@
+body{
+
+    /*background-image: url(../img/Vector\ Smart\ Object\ copy\ 4.png);*/
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat-y;
+}
+html{
+    height: 100%;
+}
+/* .articlesShowPage{
+    height: 100%;
+} */
+.articleShowBox {
+    background-color: #fff;
+    border-radius: 0 0 14px 14px;
+    box-shadow: 0px 3px 6px rgba(121, 121, 121, 0.575);
+    /*padding: 15px 30px;*/
+
+}
+.articleShowBox .articleShowTitle {
+    border-bottom: 1px solid rgb(59, 59, 59);
+    padding: 8px 0;
+}
+.articleShowBox .articleIntBox {
+    border-radius: 15px;
+    box-shadow: 0px 3px 6px #585858;
+    background-color: rgb(221, 221, 221);
+}
+.articleShowBox .articleIntBox .imageBox {
+    height: 180px;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 10px;
+    /* margin-bottom: 8px; */
+}
+.articleShowBox .articleIntBox .imageBox img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+
+}
+.articleShowBox .articleIntBox .articleInfo {
+    padding: 4px;
+}
+.articleShowBox .articleIntBox .articleInfo .articleTitle {
+
+    padding: 8px ;
+}
+.articleShowBox .articleIntBox .articleInfo .articleText {
+    color: rgb(77, 77, 77);
+    margin-bottom: 18px;
+    padding: 5px ;
+    overflow: hidden;
+    box-sizing: content-box;
+    height: 60px;
+    line-height: 22px;
+    max-lines: 3;
+}
+.articleShowBox .articleIntBox .articleInfo .readMore {
+    position: relative;
+    height: 30px;
+
+    padding: 20px 12px;
+    border-radius: 12px;
+    background: rgb(168, 168, 168);
+    font-size: 16px;
+}
+.articleShowBox .articleIntBox .articleInfo .readMore a {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all ease-in-out 0.43s;
+    border-radius: 12px;
+}
+.articleShowBox .articleIntBox .articleInfo .readMore a:hover {
+    background-color: #ddb24f;
+}
+@media(max-width:420px){
+    .articleShowBox {
+
+        padding: 15px ;
+
+    }
+}

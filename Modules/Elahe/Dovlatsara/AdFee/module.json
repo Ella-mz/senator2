@@ -1,0 +1,13 @@
+{
+    "name": "AdFee",
+    "alias": "adfee",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\AdFee\\Providers\\AdFeeServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

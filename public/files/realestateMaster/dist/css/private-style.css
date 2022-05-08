@@ -1,0 +1,51 @@
+.temp-blue-background{
+    background-color: #FFF4B8;
+}.temp-white-background{
+    background-color: #fff;
+}.temp-black-text{
+    color: #000;
+}.temp-black-text:hover{
+    color: rgb(31, 31, 167);
+}.temp-white-text{
+    color: #2a2929;
+}
+.temp-lightBlue-text{
+    color: #a0d0ff;
+}
+.flexBox-center-col{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Profile-round-pic{
+    width: 120px !important;
+    height: 120px !important;
+    border-radius: 50%;
+}.brand-image {
+     float: right;
+     line-height: .8;
+     max-height: 34px;
+     width: auto;
+     margin-left: 2.8rem;
+     margin-right: .5rem;
+     margin-top: -3px;
+ }
+
+.badge.customBlue{
+    color: #fff;
+    background-color: #2a2929;
+}
+
+.customBluee{
+    color: #fff;
+    background-color: #2a2929;
+}
+.customBluee:hover{
+    color: #2a2929;
+    background-color: #fff;
+    border: 2px solid #2a2929;
+}
+/* }.hidden{
+    display: none;
+} */

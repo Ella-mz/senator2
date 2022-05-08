@@ -1,0 +1,76 @@
+
+.shareButtons * {
+   text-decoration: none;
+    box-sizing: border-box;
+    padding: 0;
+    list-style: none;
+    margin: 0;
+}
+
+.shareButtons nav {
+    position: fixed;
+    width: 60px;
+    margin-top: 150px;
+    transition: all 0.3s linear;
+    box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, .4);
+}
+
+.shareButtons nav ul{
+    margin-top: 0;
+    margin-bottom: 0rem
+}
+.shareButtons nav li{
+    height: 45px;
+    position: relative;
+}
+
+.shareButtons nav li a{
+    color: #fff !important;
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 45px;
+    padding-left: 25%;
+    border-bottom: 1px solid rgba(0, 0, 0, .4);
+    transition: all 0.3s linear;
+    text-decoration: none !important;
+}
+
+.shareButtons nav li:nth-child(1) a{
+    background: #25d366;
+}
+
+.shareButtons nav li:nth-child(2) a{
+    background: #e1306c;
+}
+
+.shareButtons nav li:nth-child(3) a{
+    background: #0088cc;
+}
+
+.shareButtons nav li a i {
+    position: absolute;
+    top: 14px;
+    left: 24px;
+    font-size: 15px;
+}
+
+.shareButtons ul li a span{
+    display: none;
+    font-weight: bold;
+    letter-spacing: 1px;
+    /*text-transform: uppercase;*/
+}
+
+.shareButtons a:hover{
+    z-index: 1;
+    width: 200px;
+    border-bottom: 1px solid rgba(0, 0 ,0, .5);
+    box-shadow: 0 0 1px 1px rgba(0, 0 ,0, .3);
+}
+
+.shareButtons ul li:hover a span{
+    padding-right: 30%;
+    display: block;
+    font-size: 15px;
+}

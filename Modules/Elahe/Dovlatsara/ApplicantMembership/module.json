@@ -1,0 +1,13 @@
+{
+    "name": "ApplicantMembership",
+    "alias": "applicantmembership",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\ApplicantMembership\\Providers\\ApplicantMembershipServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

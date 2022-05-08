@@ -1,0 +1,13 @@
+{
+    "name": "RealestateMaster",
+    "alias": "realestatemaster",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\RealestateMaster\\Providers\\RealestateMasterServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

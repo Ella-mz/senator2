@@ -1,0 +1,895 @@
+body {
+    background: rgb(240, 240, 240);
+    padding: 0;
+    margin: 0;
+}
+.agahi-detail {
+    background: rgb(240, 240, 240);
+}
+
+.form-agahi {
+    border-radius: 10px;
+    /*background: rgb(231, 230, 230);*/
+    padding: 20px 0;
+}
+
+.first-info {
+    /*background: white;*/
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.first-info-box-inputs div {
+    padding: 10px 0;
+}
+
+.first-info-box-inputs div label {
+    /* padding-left: 35px; */
+
+    display: block;
+}
+
+.first-info-box-inputs div input {
+    width: 80%;
+    border-radius: 4px;
+    border: 1px solid rgb(138, 138, 138);
+}
+
+.first-info-box-inputs div select.full {
+    width: 80%;
+}
+
+.first-info-box-map p {
+    padding: 12px 0;
+    font-weight: 700;
+}
+
+.container .form-agahi-btn {
+    text-align: center;
+    padding: 60px 0;
+}
+
+.container .form-agahi-btn .enseraf {
+    border: 1px solid rgb(192, 4, 4);
+    color: rgb(192, 4, 4);
+    padding: 5px 20px;
+    border-radius: 4px;
+    margin: 0 4px;
+}
+
+.container .form-agahi-btn .edameh {
+    padding: 6px 25px;
+    background: #2a2929;
+    color: #fff;
+    border-radius: 4px;
+    margin: 0 4px;
+    border: 1px solid #2a2929;
+}
+
+.sidebar-wrapper .box-sidebar .filter-switch {
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    position: relative;
+}
+
+.switch-box {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 50px;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"]:checked ~ .toggle {
+    background: #ffffff;
+    left: 4px;
+    transition: 0.5s;
+}
+
+input[type="checkbox"]:checked ~ .switch {
+    background: #00bfd6;
+    transition: 0.5s;
+    color: #797979;
+    cursor: pointer;
+}
+
+.switch h1.switch-title {
+    position: absolute;
+    right: 50px;
+    text-align: right;
+    font-size: 14px;
+    bottom: -3px;
+    font-weight: bold;
+    color: #797979;
+    width: 145px;
+    bottom: -2px;
+}
+
+.switch {
+    display: block;
+    width: 40px;
+    height: 18px;
+    background: #e5e5e5;
+    border-radius: 20px;
+    position: absolute;
+    top: 0;
+    transition: 0.5s;
+    left: 0px;
+    cursor: pointer;
+    border: 1px solid #8c8c8c;
+}
+
+.toggle {
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: white;
+    position: absolute;
+    top: 0.9px;
+    left: 22px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.card {
+    margin: 13px;
+    margin: 0 0 10px 0;
+    text-align: center;
+    position: relative;
+}
+
+.card label {
+    float: right;
+    margin-top: 37px;
+    display: block;
+    margin-right: -60px;
+    color: #c4c4c4;
+}
+
+#switch2:checked ~ .toggle {
+    background: #fff;
+}
+
+#switch2:checked ~ .switch {
+    background: red;
+}
+
+.centered {
+    position: absolute;
+    left: calc(95% - 20px);
+}
+
+.header-filters {
+    width: 100%;
+    padding: 10px 15px;
+    border-bottom: 1px solid #e5e5ea;
+    float: right;
+    margin-top: 20px;
+    display: none;
+}
+
+.header-filters .btn-filter {
+    border-radius: 4px;
+    background-color: #e0e0e0;
+    color: #424242;
+    line-height: 1.833;
+    padding: 5px 11px;
+    margin-left: 5px;
+    outline: none;
+    font: 14px iranyekan;
+    cursor: pointer;
+}
+
+.header-filters .remodal-search-advanced {
+    width: 100%;
+    height: 100%;
+    z-index: 99999999;
+    position: fixed;
+    color: #2b2e38;
+    background: #f1f1f1;
+    top: 0;
+    right: 0;
+    display: block;
+    overflow-y: scroll;
+    display: none;
+    overflow-x: hidden;
+}
+
+.search-filter-remodal-close {
+    position: absolute;
+    top: 6px;
+    left: 22px;
+    display: block;
+    overflow: visible;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    -webkit-transition: color 0.2s;
+    -o-transition: color 0.2s;
+    transition: color 0.2s;
+    text-decoration: none;
+    color: #000;
+    border: 0;
+    outline: none !important;
+    background: transparent;
+    font-size: 25px;
+    line-height: 1;
+    padding: 5px;
+    z-index: 100;
+    outline: none;
+}
+
+.header-filters .remodal-search-advanced .remodal-page-header {
+    padding: 0 25px;
+    width: 100%;
+    background: #e9e9e9;
+    font: 16px iranyekan;
+    float: right;
+    height: 55px;
+    line-height: 50px;
+}
+
+.header-filters .remodal-search-advanced .remodal-page-main .filter-bar {
+    background: #fff;
+    padding: 14px;
+    width: 100%;
+}
+
+.header-filters
+.remodal-search-advanced
+.remodal-page-main
+.filter-bar
+.js-listing-options-clear {
+    border-radius: 4px;
+    background-color: #e0e0e0;
+    color: #424242;
+    font: 12px iranyekan;
+    line-height: 1.833;
+    padding: 5px 11px;
+    margin-left: 5px;
+    outline: none;
+    margin-top: 15px;
+}
+
+.header-filters
+.remodal-search-advanced
+.remodal-page-main
+.filter-bar
+.js-box-content-items {
+    float: left;
+}
+
+.header-filters
+.remodal-search-advanced
+.remodal-page-main
+.filter-bar
+.js-box-content-items
+.switch {
+    position: absolute;
+    top: 70px;
+    left: 15px;
+    background: #e0e0e0;
+    width: 45px;
+    height: 30px;
+    border-radius: 31px;
+    border: none;
+}
+
+.header-filters
+.remodal-search-advanced
+.remodal-page-main
+.filter-bar
+.js-box-content-items
+#switch3:checked
+~ .switch {
+    background: #00bfd6;
+}
+
+/*second info */
+
+.second-info {
+    /*background: white;*/
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.second-info h6 {
+    text-align: center;
+}
+
+.second-info-typeofvahed {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.second-info-typeofvahed p {
+    font-weight: 700;
+}
+
+.second-info-second-form {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* .second-info-second-form input {
+    width: 70px;
+    border-radius: 4px;
+    border: 1px solid rgb(138, 138, 138);
+} */
+
+.ks-cboxtags {
+    list-style: none;
+    /* padding: 10px 20px; */
+    text-align: center;
+}
+
+.ks-cboxtags li {
+    display: inline;
+}
+
+.ks-cboxtags li label {
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 2px solid rgba(139, 139, 139, 0.3);
+    color: #494949;
+    border-radius: 25px;
+    white-space: nowrap;
+    margin: 3px 0px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    transition: all 0.2s;
+}
+
+.ks-cboxtags li label {
+    padding: 5px 30px;
+    cursor: pointer;
+}
+.simpleInput {
+    display: block;
+    border-radius: 4px;
+    border: 1px solid rgb(138, 138, 138);
+    height: 30px;
+    width: 200px;
+}
+.formAgahiLabelCenter {
+    text-align: center;
+}
+
+.boldInputLabel {
+    font-weight: bold;
+    display: block;
+}
+.selectInputTemp {
+    padding-left: 20px;
+    min-width: 150px;
+    border-radius: 4px;
+    border: 1px solid rgb(138, 138, 138);
+    height: 30px;
+    width: 200px;
+}.simple-textarea{
+     border-radius: 4px;
+ }
+
+/* ul.ks-cboxtags li label::before {
+display: inline-block;
+font-style: normal;
+font-variant: normal;
+text-rendering: auto;
+-webkit-font-smoothing: antialiased;
+font-family: "Font Awesome 5 Free";
+font-weight: 900;
+font-size: 12px;
+padding: 2px 6px 2px 2px;
+content: "\f067";
+transition: transform .3s ease-in-out;
+} */
+
+/* ul.ks-cboxtags li input[type="checkbox"]:checked+label::before {
+content: "\f00c";
+transform: rotate(-360deg);
+transition: transform .3s ease-in-out;
+} */
+
+.ks-cboxtags li input[type="checkbox"]:checked + label {
+    border: 2px solid #2a2929;
+    background-color: #2a2929;
+    color: #fff;
+    transition: all 0.2s;
+}
+
+.ks-cboxtags li input[type="checkbox"] {
+    display: absolute;
+}
+
+.ks-cboxtags li input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+}
+
+.ks-cboxtags li input[type="checkbox"]:focus + label {
+    border: 2px solid #e9a1ff;
+}
+
+.second-info-input {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.second-info-input p {
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+.agahi-detail-tabs {
+    background-color: #e7e7e7;
+    border-radius: 18px;
+    padding: 20px;
+}
+
+.agahi-detail-tabs .agahi-detail-tabsHead {
+    margin-bottom: 30px;
+    text-align: center;
+    background-color: #fff;
+    padding: 12px 28px;
+    border-radius: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.agahi-detail-navigationTab {
+    background-color: #fff;
+    padding: 4px 8px;
+    text-align: center;
+    border-radius: 6px;
+}
+
+.agahi-detail-navigationTab .tabs li {
+    border-bottom: 1px solid #a8a8a8;
+    font-size: 16px;
+    padding: 12px 0;
+    font-weight: bold;
+    color: rgb(80, 80, 80);
+    /* margin-bottom: 4px; */
+}
+
+.agahi-detail-navigationTab .tabs li:hover {
+    cursor: pointer;
+}
+
+.agahi-detail-navigationTab .tabs li:last-child {
+    border: none;
+}
+
+.agahi-detail-navigationTab .tabs li.selected {
+    background-color: #ddb24f;
+    color: #fff;
+}
+
+.agahi-detail .tabContent .infoform {
+    display: none;
+}
+
+.agahi-detail .tabContent .infoform.selected {
+    display: block;
+}
+.explain-textarea label {
+    margin-bottom: 6px;
+}
+.explain-textarea textarea {
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid rgb(138, 138, 138);
+    min-height: 150px;
+}
+.explain-textarea textarea::placeholder {
+    padding: 10px;
+}
+.account-choice {
+    margin: 40px 0;
+}
+.account-choice .account-box {
+    border-radius: 8px;
+    border: 1px solid;
+    padding: 14px 8px;
+    background-color: #ddb24f;
+    color: #fff;
+}
+.account-choice .account-name {
+    outline: none;
+    font-size: 15px;
+    /* color: #ddb24f; */
+}
+.account-choice .price-box {
+}
+/* صفحه بارگذاری عکس */
+
+.file {
+    opacity: 0;
+    width: 0.1px;
+    height: 0.1px;
+    position: absolute;
+}
+
+.file-input label {
+    display: block;
+    position: relative;
+    width: 180px;
+    height: 50px;
+    border-radius: 25px;
+    background: blue;
+    box-shadow: 0 4px 7px rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s ease-out;
+}
+
+.file-name {
+    position: relative;
+    /* bottom: -48px; */
+    /* left: 35px; */
+    font-size: 0.9em;
+    color: #555;
+    padding: 25px 30px;
+}
+
+input:hover + label,
+input:focus + label {
+    /* transform: scale(1.02); */
+}
+
+/* Adding an outline to the label on focus */
+
+input:focus + label {
+    outline: 1px solid #000;
+    outline: -webkit-focus-ring-color auto 2px;
+}
+
+.input-file-container {
+    position: relative;
+    /* width: 225px; */
+}
+
+.js .input-file-trigger {
+    display: block;
+    padding: 14px;
+    background: blue;
+    color: #fff;
+    font-size: 1em;
+    /* transition: all .4s; */
+    cursor: pointer;
+    text-align: center;
+}
+
+.js .input-file {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 225px;
+    opacity: 0;
+    padding: 14px 0;
+    cursor: pointer;
+}
+
+.js .input-file:hover + .input-file-trigger,
+.js .input-file:focus + .input-file-trigger,
+.js .input-file-trigger:hover,
+.js .input-file-trigger:focus {
+    /* background: #34495E; */
+    /* color: #39D2B4; */
+}
+
+.file-return {
+    margin: 0;
+}
+
+.file-return:not(:empty) {
+    margin: 1em 0;
+}
+
+.js .file-return {
+    font-style: italic;
+    font-size: 0.9em;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+/* Useless styles, just for demo styles */
+
+.js .input-filet {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 225px;
+    opacity: 0;
+    padding: 14px 0;
+    cursor: pointer;
+}
+
+.js .input-file:hover + .input-file-trigger,
+.js .input-file:focus + .input-file-trigger,
+.js .input-file-trigger:hover,
+.js .input-file-trigger:focus {
+    /* background: #34495E; */
+    /* color: #39D2B4; */
+}
+
+.file-returnt {
+    margin: 0;
+}
+
+.file-returnt:not(:empty) {
+    margin: 1em 0;
+}
+
+.js .file-returnt {
+    font-style: italic;
+    font-size: 0.9em;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+/* Useless styles, just for demo styles */
+
+.js .input-filett {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 225px;
+    opacity: 0;
+    padding: 14px 0;
+    cursor: pointer;
+}
+
+.js .input-file:hover + .input-file-trigger,
+.js .input-file:focus + .input-file-trigger,
+.js .input-file-trigger:hover,
+.js .input-file-trigger:focus {
+    /* background: #34495E; */
+    /* color: #39D2B4; */
+}
+
+.file-returntt {
+    margin: 0;
+}
+
+.file-returntt:not(:empty) {
+    margin: 1em 0;
+}
+
+.js .file-returntt {
+    font-style: italic;
+    font-size: 0.9em;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+/* Useless styles, just for demo styles */
+
+.js .input-filettt {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 225px;
+    opacity: 0;
+    padding: 14px 0;
+    cursor: pointer;
+}
+
+.js .input-file:hover + .input-file-trigger,
+.js .input-file:focus + .input-file-trigger,
+.js .input-file-trigger:hover,
+.js .input-file-trigger:focus {
+    /* background: #34495E; */
+    /* color: #39D2B4; */
+}
+
+.file-returnttt {
+    margin: 0;
+}
+
+.file-returnttt:not(:empty) {
+    margin: 1em 0;
+}
+
+.js .file-returnttt {
+    font-style: italic;
+    font-size: 0.9em;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+/* Useless styles, just for demo styles */
+
+.js .input-filetttt {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 225px;
+    opacity: 0;
+    padding: 14px 0;
+    cursor: pointer;
+}
+
+.js .input-file:hover + .input-file-trigger,
+.js .input-file:focus + .input-file-trigger,
+.js .input-file-trigger:hover,
+.js .input-file-trigger:focus {
+    /* background: #34495E; */
+    /* color: #39D2B4; */
+}
+
+.file-returntttt {
+    margin: 0;
+}
+
+.file-returntttt:not(:empty) {
+    margin: 1em 0;
+}
+
+.js .file-returntttt {
+    font-style: italic;
+    font-size: 0.9em;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+@media (max-width: 1200px) {
+    .agahi-detail-navigationTab .tabs li {
+        font-size: 14px;
+    }
+    .agahi-detail-tabs .agahi-detail-tabsHead {
+        padding: 12px;
+    }
+}
+
+@media (max-width: 991px) {
+    /* .first-info-box-inputs div input {
+          width: 100%;
+      }
+      .first-info-box-inputs div select {
+          width: 100%;
+      } */
+}
+
+@media (max-width: 768px) {
+    .agahi-detail-navigationTab .tabs {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .agahi-detail-navigationTab .tabs li {
+        border-radius: 14px;
+        border: none;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+        font-size: 13px;
+        padding: 6px 8px;
+        font-weight: 400;
+        color: rgb(80, 80, 80);
+        margin: 4px 5px;
+    }
+    .agahi-detail-navigationTab {
+        padding: 8px 6px;
+    }
+}
+.radio--input {
+    display: none;
+}
+.radio--label {
+    padding: 6px 18px;
+    font-size: 14px;
+    cursor: pointer;
+    color: #494949;
+    transition: 0.4s;
+    background-color: #fff;
+    border: 2px solid #2a2929;
+    margin: 0px 0px;
+
+    overflow: hidden;
+}
+.radio--label.full {
+    border-radius: 25px;
+}
+.radio--label.half:last-of-type {
+    border-radius: 25px 0 0 25px;
+}
+.radio--label.half:first-of-type {
+    border-radius: 0 25px 25px 0;
+}
+
+.radio--input:checked + .radio--label {
+    background-color: #2a2929;
+    color: #fff;
+}
+input.simple-checkbox {
+    display: unset;
+    outline: none;
+    margin-left: 4px;
+}.checkbox-place{
+     display: flex;
+     align-items: center;
+
+ }
+.checkbox-place.text {
+    margin: 10px 0;
+}
+.checkbox-place.text .form-check-input {
+    border: 1px solid rgba(71, 29, 88, 0.25);
+    width: 1.3em;
+    height: 1.3em;
+    margin-top: 0;
+}
+
+.checkbox-place.text .form-check-input:checked {
+    background-color: #ddb24f;
+    border-color: #ddb24f;
+    outline: none;
+}
+.checkbox-place.text .form-check-input:focus {
+    box-shadow:none;
+}.checkbox-place.text label{
+     font-weight: bold;
+     font-size: 15px;
+     margin-left: 6px;
+ }
+@media (max-width: 575px) {
+    .checkbox-place {
+        justify-content: center;
+    }.boldInputLabel{
+         text-align: center;
+     }
+}
+.agahi-price-box .price-box-title {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.agahi-price-box .price-packages ul li {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 15px;
+}
+.agahi-price-box .price-packages ul li:last-child {
+    margin-bottom: 0;
+}
+
+.agahi-price-box .price-packages ul li .radio-box {
+    margin-left: 12px;
+    display: flex;
+    align-items: center;
+    outline: none;
+}
+.agahi-price-box .price-packages ul li .radio-box label {
+    outline: none;
+    margin-right: 8px;
+    font-weight: bolder;
+}
+.agahi-price-box .price-packages ul li .radio-box {
+}
+.agahi-price-box .price-packages ul li p {
+    font-weight: bold;
+}
+.agahi-price-box .price-packages ul li p.price-package-day {
+    margin-left: 45px;
+}
+
+/*@media(max-width:575px){*/
+/*    .checkbox-place{*/
+
+/*        justify-content: center;*/
+
+/*    }*/
+/*}*/

@@ -1,0 +1,127 @@
+{
+    "name": "laravel/laravel",
+    "type": "project",
+    "description": "The Laravel Framework.",
+    "keywords": [
+        "framework",
+        "laravel"
+    ],
+    "license": "MIT",
+    "require": {
+        "php": "^7.2.5",
+        "ext-json": "*",
+        "anetwork/validation": "^2.2",
+        "cviebrock/eloquent-sluggable": "7.0",
+        "doctrine/dbal": "2.12.1",
+        "fideloper/proxy": "^4.2",
+        "fruitcake/laravel-cors": "^1.0",
+        "guzzlehttp/guzzle": "^6.3",
+        "hekmatinasser/verta": "^1.12",
+        "intervention/image": "^2.7",
+        "ipecompany/smsirlaravel": "^1.0",
+        "jorenvanhocht/laravel-share": "^4.1",
+        "laravel/framework": "^7.0",
+        "laravel/tinker": "^2.0",
+        "laravel/ui": "2.4",
+        "morilog/jalali": "3.*",
+        "nwidart/laravel-modules": "^8.2",
+        "realrashid/sweet-alert": "^4.0",
+      "ext-gd": "*"
+    },
+    "require-dev": {
+        "barryvdh/laravel-debugbar": "^3.6",
+        "facade/ignition": "^2.0",
+        "fzaninotto/faker": "^1.9.1",
+        "mockery/mockery": "^1.3.1",
+        "nunomaduro/collision": "^4.1",
+        "phpunit/phpunit": "^8.5"
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "platform-check": false,
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "dont-discover": []
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/",
+            "Modules\\AdminMaster\\": "Modules/Elahe/Dovlatsara/AdminMaster",
+            "Modules\\Category\\": "Modules/Elahe/Dovlatsara/Category",
+            "Modules\\GroupAttribute\\": "Modules/Elahe/Dovlatsara/GroupAttribute",
+            "Modules\\Attribute\\": "Modules/Elahe/Dovlatsara/Attribute",
+            "Modules\\AttributeItem\\": "Modules/Elahe/Dovlatsara/AttributeItem",
+            "Modules\\AdvertisingFee\\": "Modules/Elahe/Dovlatsara/AdvertisingFee",
+            "Modules\\City\\": "Modules/Elahe/Dovlatsara/City",
+            "Modules\\Neighborhood\\": "Modules/Elahe/Dovlatsara/Neighborhood",
+            "Modules\\Union\\": "Modules/Elahe/Dovlatsara/Union",
+            "Modules\\Membership\\": "Modules/Elahe/Dovlatsara/Membership",
+            "Modules\\ApplicantMembership\\": "Modules/Elahe/Dovlatsara/ApplicantMembership",
+            "Modules\\Shop\\": "Modules/Elahe/Dovlatsara/Shop",
+            "Modules\\RoleAndPermission\\": "Modules/Elahe/Dovlatsara/RoleAndPermission",
+            "Modules\\User\\": "Modules/Elahe/Dovlatsara/User",
+            "Modules\\RealestateMaster\\": "Modules/Elahe/Dovlatsara/RealestateMaster",
+            "Modules\\Ad\\": "Modules/Elahe/Dovlatsara/Ad",
+            "Modules\\AdImage\\": "Modules/Elahe/Dovlatsara/AdImage",
+            "Modules\\UserMaster\\": "Modules/Elahe/Dovlatsara/UserMaster",
+            "Modules\\General\\": "Modules/Elahe/Dovlatsara/General",
+            "Modules\\Setting\\": "Modules/Elahe/Dovlatsara/Setting",
+            "Modules\\ShopImage\\": "Modules/Elahe/Dovlatsara/ShopImage",
+            "Modules\\ContractorProject\\": "Modules/Elahe/Dovlatsara/ContractorProject",
+            "Modules\\ContractorProjectImage\\": "Modules/Elahe/Dovlatsara/ContractorProjectImage",
+            "Modules\\Association\\": "Modules/Elahe/Dovlatsara/Association",
+            "Modules\\Enum\\": "Modules/Elahe/Dovlatsara/Enum",
+            "Modules\\EnumType\\": "Modules/Elahe/Dovlatsara/EnumType",
+            "Modules\\AssociationSkill\\": "Modules/Elahe/Dovlatsara/AssociationSkill",
+            "Modules\\Bookmark\\": "Modules/Elahe/Dovlatsara/Bookmark",
+            "Modules\\SMS\\": "Modules/Elahe/Dovlatsara/SMS",
+            "Modules\\UserMasterNew\\": "Modules/Elahe/Dovlatsara/UserMasterNew",
+            "Modules\\AdminMasterNew\\": "Modules/Elahe/Dovlatsara/AdminMasterNew",
+            "Modules\\AdFee\\": "Modules/Elahe/Dovlatsara/AdFee",
+            "Modules\\AdImageNew\\": "Modules/Elahe/Dovlatsara/AdImageNew",
+            "Modules\\ActivityRange\\": "Modules/Elahe/Dovlatsara/ActivityRange",
+            "Modules\\Recentseen\\": "Modules/Elahe/Dovlatsara/Recentseen",
+            "Modules\\Hologram\\": "Modules/Elahe/Dovlatsara/Hologram",
+            "Modules\\HologramInterface\\": "Modules/Elahe/Dovlatsara/HologramInterface",
+            "Modules\\CommonQuestion\\": "Modules/Elahe/Dovlatsara/CommonQuestion",
+            "Modules\\Advertising\\": "Modules/Elahe/Dovlatsara/Advertising",
+            "Modules\\RoleAndPermissionNew\\": "Modules/Elahe/Dovlatsara/RoleAndPermissionNew",
+            "Modules\\Application\\": "Modules/Elahe/Dovlatsara/Application",
+            "Modules\\Order\\": "Modules/Elahe/Dovlatsara/Order",
+            "Modules\\Payment\\": "Modules/Elahe/Dovlatsara/Payment",
+            "Modules\\Gateway\\": "Modules/Elahe/Dovlatsara/Gateway",
+            "Modules\\Article\\": "Modules/Elahe/Dovlatsara/Article",
+            "Modules\\CostumerClub\\": "Modules/Elahe/Dovlatsara/CostumerClub",
+            "Modules\\Blog\\": "Modules/Elahe/Dovlatsara/Blog",
+            "Modules\\Comment\\": "Modules/Elahe/Dovlatsara/Comment",
+            "Modules\\Map\\": "Modules/Elahe/Dovlatsara/Map"
+        },
+        "classmap": [
+            "database/seeds",
+            "database/factories"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "scripts": {
+        "post-autoload-dump": [
+            "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+            "@php artisan package:discover --ansi"
+        ],
+        "post-root-package-install": [
+            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+        ],
+        "post-create-project-cmd": [
+            "@php artisan key:generate --ansi"
+        ]
+    }
+}

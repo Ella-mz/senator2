@@ -1,0 +1,13 @@
+{
+    "name": "UserMaster",
+    "alias": "usermaster",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\UserMaster\\Providers\\UserMasterServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

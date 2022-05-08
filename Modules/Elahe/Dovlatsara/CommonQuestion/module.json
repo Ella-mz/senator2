@@ -1,0 +1,13 @@
+{
+    "name": "CommonQuestion",
+    "alias": "commonquestion",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\CommonQuestion\\Providers\\CommonQuestionServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

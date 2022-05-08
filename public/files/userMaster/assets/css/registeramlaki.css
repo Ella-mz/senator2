@@ -1,0 +1,307 @@
+ body{
+  min-height: 100%;
+
+}
+
+html {
+  height: 100%;
+}
+body{
+  background-color: rgba(41, 41, 221, 0.767);
+  background-image: url(../img/Vector\ Smart\ Object\ copy\ 4.png);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+main {
+ min-height: 100%;
+    display: flex;
+    justify-content: center;
+    justify-content: absolute;
+    width: 100%;
+    top: 0;
+    right: 0;
+    align-items: center;
+    padding: 30px 0;
+}
+
+.register-amlaki {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.show-register-amlaki {
+  height: 120vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.registerInputBox {
+  margin-bottom: 24px;
+ }
+.registerInputBox input,
+.registerInputBox select {
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #535353;
+  width: 260px;
+
+}.registerInputBox select{
+  color:#8e8e8e
+}
+
+.registerInputBoxMixed .mixedInput {
+  padding: 2px;
+
+  width: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.registerInputBoxMixed .mixedInput input {
+  border: none;
+  padding: 8px 2px;
+  border-radius:0 6px 6px 0;
+  border: 1px solid #8e8e8e;
+  width: auto;
+}
+.registerInputBoxMixed .mixedInput a {
+  font-size: 10px;
+  padding: 11px 10px;
+  background-color: rgb(100, 79, 216);
+  color: #fff;
+  border-radius: 6px 0 0 6px;
+  border: 1px solid  rgb(100, 79, 216);
+
+}
+/* .registerInputBox .registerselectbox{
+
+} */
+.registerBtnBox {
+  direction: ltr;
+  padding: 0 32px;
+}
+.registerBtnBox .registerRecBlueBtn {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: 1px solid #3c50e0;
+  border-radius: 8px;
+  background-color: #3c50e0;
+  color: #fff;
+  font-weight: bold;
+}
+.show-login-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.show-login-navigationTab .tabs {
+  display: flex;
+  align-items: center;
+}
+.show-login-navigationTab .tabs li {
+  margin: 0 8px;
+  color: #fff;
+  padding: 5px 15px;
+
+  border-radius: 6px;
+  background-color: #4040d0;
+  font-size: 14px;
+  box-shadow: 0px 3px 6px #fff;
+}
+.show-login-navigationTab .tabs li.selected {
+  color: #fff;
+
+  background-color: #eca216;
+}
+.uploadTemInput .fileUploadForm {
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #8e8e8e;
+  width: 260px;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 1400px) {
+  .show-login-box-white-bg {
+    padding: 15px;
+  }
+}
+@media (max-width: 992px) {
+  .registerInputBox input  {
+    width: 100%;
+  }.registerInputBox select{
+
+    width: 100%;
+  }
+  .uploadTemInput .fileUploadForm {
+    width: 100%;
+  }
+  .registerBtnBox {
+    text-align: center;
+  }
+  .show-login-head {
+    display: block;
+  }
+  .show-login-navigationTab .tabs {
+    justify-content: center;
+    margin-bottom: 16px;
+    margin-top: 16px;
+  }
+  .show-login-navigationTab .tabs li {
+    font-size: 13px;
+  }
+  .registerBtnBox .registerRecBlueBtn {
+    padding: 8px 16px;
+    font-size: 14px;
+  }.registerInputBoxMixed .mixedInput{
+    margin: 14px 0;
+  }.registerInputBoxMixed .mixedInput{
+    width: 100%;
+  }
+  .registerInputBoxMixed .mixedInput input{
+    width: 69%;
+  }.registerInputBoxMixed .mixedInput a{
+    width: 29%;
+    text-align: center;
+  }
+}
+ @media (max-width: 380px){
+  .registerInputBoxMixed .mixedInput input{
+    width: 67%;
+  }.registerInputBoxMixed .mixedInput a{
+    width: 33%;
+  }
+}
+@media (max-width: 340px) {
+  .show-login-box {
+    padding: 12px 8px;
+  }
+  .show-login-box-white-bg {
+    padding: 14px 8px;
+  }
+  .show-login-navigationTab .tabs li {
+    padding: 5px 10px;
+  }
+}
+input[type="text"]:-moz-placeholder {
+  text-align: right;
+}
+input[type="text"]:-ms-input-placeholder {
+  text-align: right;
+}
+input[type="text"]::-webkit-input-placeholder {
+  text-align: right;
+}
+
+.input{
+direction: rtl;
+}
+
+.input:focus{
+text-align: left;
+direction: ltr;
+}
+/* file upload */
+.uploadTemInput-title{
+  margin-bottom: 5px;
+}
+
+.file-upload {
+  position: relative;
+  width: 93.5%;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 6px;
+  border: 1px solid #535353;
+}
+
+.file-upload::after {
+  content: attr(data-text);
+  font-size: 16px;
+  position: absolute;
+  top: 0;
+  right: 100px;
+  background: white;
+  padding: 10px 15px;
+  display: block;
+  /* width: calc(100% - 40px); */
+  pointer-events: none;
+  z-index: 20;
+  height: 25px;
+  line-height: 20px;
+  color: #999;
+  border-radius: 5px 10px 10px 5px;
+  -webkit-border-radius: 5px 10px 10px 5px;
+  -moz-border-radius: 5px 10px 10px 5px;
+  -ms-border-radius: 5px 10px 10px 5px;
+  -o-border-radius: 5px 10px 10px 5px;
+  font-weight: 300;
+}
+
+.file-upload::before {
+  content: " انتخاب";
+  position: absolute;
+  top: 1حط;
+  right: 0;
+  display: inline-block;
+  height: 40px;
+  background-color: rgb(100, 79, 216);
+  color: white;
+  font-weight: 700;
+  z-index: 25;
+  font-size: 14px;
+  line-height: 40px;
+  padding: 0 20px;
+  pointer-events: none;
+  border-radius: 4px;
+  /*border-radius: 0 5px 5px 0;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  */
+}
+
+.file-upload input {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 99;
+  height: 40px;
+  margin: 0;
+  padding: 0;
+  display: block;
+  cursor: pointer;
+  width: 100%;
+}
+
+@media(max-width:1400px) {
+  .file-upload {
+      width: 100%;
+  }
+}
+
+@media(max-width:1200px) {
+  .file-upload {
+      width: 83.5%;
+  }
+}
+
+@media(max-width:992px) {
+  .file-upload {
+      width: 100%;
+  }
+}.register-box-label{
+  color: #535353;
+    font-size: 16px;
+    font-weight: 700;
+}

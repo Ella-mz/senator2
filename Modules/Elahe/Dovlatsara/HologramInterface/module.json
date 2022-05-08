@@ -1,0 +1,13 @@
+{
+    "name": "HologramInterface",
+    "alias": "holograminterface",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\HologramInterface\\Providers\\HologramInterfaceServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

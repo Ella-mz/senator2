@@ -1,0 +1,13 @@
+{
+    "name": "AdImage",
+    "alias": "adimage",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\AdImage\\Providers\\AdImageServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

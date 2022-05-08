@@ -1,0 +1,13 @@
+{
+    "name": "RoleAndPermissionNew",
+    "alias": "roleandpermissionnew",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\RoleAndPermissionNew\\Providers\\RoleAndPermissionNewServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

@@ -1,0 +1,13 @@
+{
+    "name": "AdvertisingFee",
+    "alias": "advertisingfee",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\AdvertisingFee\\Providers\\AdvertisingFeeServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

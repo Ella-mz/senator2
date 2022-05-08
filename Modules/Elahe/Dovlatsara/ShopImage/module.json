@@ -1,0 +1,13 @@
+{
+    "name": "ShopImage",
+    "alias": "shopimage",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\ShopImage\\Providers\\ShopImageServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

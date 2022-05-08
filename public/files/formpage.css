@@ -1,0 +1,638 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.show-form {
+    /* width: 80%; */
+    margin-top: 70px;
+    margin-bottom: 120px;
+    padding: 0 150px;
+}
+
+.categories {
+    text-align: center;
+    margin-bottom: 65px;
+}
+
+.sidebar-wrapper {
+    width: 100%;
+    height: auto;
+    float: right;
+    margin-top: 20px;
+}
+
+.sidebar-wrapper .box-sidebar {
+    width: 100%;
+    height: auto;
+    float: right;
+    border: 1px solid #dedede;
+    box-shadow: 0 12px 12px 0 hsla(0, 0%, 71%, .11);
+    padding: 7px 5px;
+    margin-bottom: 10px;
+    background: #fff;
+    position: relative;
+}
+
+.sidebar-wrapper .box-sidebar .box-header-sidebar {
+    font: 14px;
+    font-weight: 700;
+    padding: 0 10px 10px 0;
+    border-bottom: 1px solid #f2f2f2;
+    width: 100%;
+    display: block;
+    color: #535353;
+    margin-bottom: 5px;
+}
+
+ul.catalog-list {
+    /* padding-left: 25px; */
+}
+
+ul.catalog-list li a form.catalog-link {
+    font-size: 30px;
+    font-weight: 700;
+    color: #545454;
+    text-decoration: none;
+    /* padding-right: 20px; */
+    padding-top: 5px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+ul.catalog-list li a.catalog-link i {
+    /* padding-left: 10px; */
+    font-size: 15px;
+    color: #9a9a9a;
+    vertical-align: middle;
+    /* padding-right: 2px; */
+}
+
+ul.catalog-list li a form.catalog-link:hover {
+    color: #00bfd6;
+}
+
+ul.catalog-list li .show-more {
+    width: 100%;
+    height: auto;
+    /* padding: 5px 10px; */
+}
+
+ul.catalog-list li .show-more span.catalog-cat-item {
+    font-size: 18px;
+    /* padding: 5px 35px 10px 0; */
+    width: 100%;
+    display: block;
+    color: #545454;
+    cursor: pointer;
+    padding-bottom: 4px;
+}
+
+ul.catalog-list li .show-more span.catalog-cat-item:hover {
+    color: #00bfd6;
+}
+
+ul.catalog-list li .show-more span.catalog-cat-item i {
+    /* padding-left: 10px; */
+    font-size: 17px;
+    color: #9a9a9a;
+    vertical-align: middle;
+    padding-right: 6px;
+    margin-top: -3px;
+}
+
+ul.catalog-list li .show-more ul li a form.catalog-link {
+    font: 14px IRANSansX;
+    color: #545454;
+    text-decoration: none;
+    /* padding-right: 55px; */
+    display: block;
+    font-weight: 500;
+    padding-top: 0;
+    padding-top: 7px;
+}
+
+.special {
+    margin-left: -2px;
+}
+
+.city-input {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.city-input p {
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.city-input select {
+    width: 370px;
+    height: 30px;
+    border-radius: 4px;
+    border-color: rgba(0, 0, 0, 0.171);
+    /* box-shadow: 2px 2px 2px 2px rgba(255, 255, 255, 0.5); */
+}
+
+.address {
+    margin-top: 40px;
+}
+
+.address p {
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.address textarea {
+    width: 100%;
+    border-radius: 4px;
+    border-color: rgba(0, 0, 0, 0.171);
+}
+
+.title-img {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.title-img .form-title p {
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.title-img .form-title input {
+    border-radius: 4px;
+    border-color: rgba(0, 0, 0, 0.171);
+    width: 370px;
+    height: 30px;
+}
+
+
+/* img */
+
+.title-img .img {
+    margin-top: 22px;
+}
+
+.js .input-file-triggertttt {
+    display: block;
+    padding: 6px 40px;
+    background: rgb(226, 15, 50);
+    color: #fff;
+    font-size: 16px;
+    /* transition: all .4s; */
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.js .input-filetttt {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 225px;
+    opacity: 0;
+    padding: 14px 0;
+    cursor: pointer;
+}
+
+.js .input-file:hover+.input-file-trigger,
+.js .input-file:focus+.input-file-trigger,
+.js .input-file-trigger:hover,
+.js .input-file-trigger:focus {
+    /* background: #34495E; */
+    /* color: #39D2B4; */
+}
+
+.file-returntttt {
+    margin: 0;
+}
+
+.file-returntttt:not(:empty) {
+    margin: 1em 0;
+}
+
+.js .file-returntttt {
+    font-style: italic;
+    font-size: .9em;
+    font-weight: bold;
+    /* padding: 10px 20px;  */
+}
+
+.sport-tag {
+    margin-top: 40px;
+    display: flex;
+    /* justify-content: space-around; */
+}
+
+.sport-tag div {
+    /* padding: 0 40px; */
+}
+
+.desc {
+    margin-top: 40px;
+}
+
+.desc p {
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.desc textarea {
+    width: 100%;
+    height: 150px;
+    border-radius: 4px;
+    border-color: rgba(0, 0, 0, 0.171);
+}
+
+.chat {
+    margin-top: 40px;
+}
+
+.chat label {
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 25px;
+    background-color: #eee;
+}
+
+.type {
+    margin-top: 40px;
+}
+
+.type p {
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.type select {
+    width: 370px;
+    height: 30px;
+    border-radius: 4px;
+    border-color: rgba(0, 0, 0, 0.281);
+    /* box-shadow: 2px 2px 2px 2px rgba(255, 255, 255, 0.5); */
+}
+
+.price-time {
+    margin-top: 40px;
+}
+
+.price-time .box-sidebar {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    padding: 15px 10px;
+}
+
+.price-time .price {
+    display: flex;
+    padding-bottom: 8px;
+}
+
+.price-time .time {
+    display: flex;
+}
+
+.price-time p {
+    /* padding-right: 10px; */
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.price-time input[type=number] {
+    width: 110px;
+    height: 25px;
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.281);
+}
+
+.price-time .redio-input {
+    /* position: relative;
+    left: -40px; */
+    /* width: 30px; */
+    color: red;
+}
+
+.time-p {
+    padding-right: 14px;
+}
+
+.price-p {
+    padding-right: 12px;
+}
+
+.send {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.send button {
+    background: rgb(250, 47, 47);
+    border: none;
+    width: 150px;
+    border-radius: 5px;
+    height: 40px;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    font-size: 18px;
+}
+
+
+/*
+=====
+CORE STYLES
+=====
+*/
+
+.toggle {
+    --uiToggleSize: var(--toggleSize, 30px);
+    --uiToggleBorderWidth: var(--toggleBorderWidth, 2px);
+    --uiToggleColor: var(--toggleColor, #222);
+    display: var(--toggleDisplay, inline-flex);
+    position: relative;
+}
+
+.toggle__input {
+    /*
+    The pattern by Sara Soueidan https://www.sarasoueidan.com/blog/inclusively-hiding-and-styling-checkboxes-and-radio-buttons/
+    */
+    width: var(--uiToggleSize);
+    /* width: 20px; */
+    height: var(--uiToggleSize);
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+}
+
+
+/*
+  1. Calculation of the gap for the custom checkbox
+  */
+
+.toggle__label {
+    display: inline-flex;
+    min-height: var(--uiToggleSize);
+    padding-left: calc(var(--uiToggleSize) + var(--toggleIndent, .4em));
+}
+
+.toggle__input:not(:disabled)~.toggle__label {
+    cursor: pointer;
+}
+
+
+/*
+  1. Ems helps to calculate size of the checkbox
+  */
+
+.toggle__label::after {
+    content: "";
+    box-sizing: border-box;
+    width: 1em;
+    height: 1em;
+    font-size: var(--uiToggleSize);
+    /* 1 */
+    background-color: transparent;
+    border: var(--uiToggleBorderWidth) solid var(--uiToggleColor);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+}
+
+.toggle__input:checked~.toggle__label::after {
+    background-color: var(--uiToggleColor);
+}
+
+.toggle__text {
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 16px;
+    margin-top: 3px;
+}
+
+
+/*
+  The arrow size and position depends from sizes of square because I needed an arrow correct positioning from the top left corner of the element toggle
+
+  1. Ems helps to calculate size and position of the arrow
+  */
+
+.toggle__label::before {
+    content: "";
+    width: 0;
+    height: 0;
+    font-size: var(--uiToggleSize);
+    /* 1 */
+    border-left-width: 0;
+    border-bottom-width: 0;
+    border-left-style: solid;
+    border-bottom-style: solid;
+    border-color: var(--toggleArrowColor, #fff);
+    position: absolute;
+    top: .5428em;
+    left: .25em;
+    z-index: 3;
+    transform-origin: left top;
+    transform: rotate(-40deg) skew(10deg);
+}
+
+.toggle__input:checked~.toggle__label::before {
+    --uiToggleArrowWidth: var(--toggleArrowWidth, 2px);
+    width: .4em;
+    height: .2em;
+    border-left-width: var(--uiToggleArrowWidth);
+    border-bottom-width: var(--uiToggleArrowWidth);
+}
+
+
+/*
+  States
+  */
+
+
+/* focus state */
+
+.toggle:focus-within {
+    outline: var(--toggleOutlineWidthFocus, 3px) solid var(--toggleOutlineColorFocus, currentColor);
+    outline-offset: var(--toggleOutlineOffsetFocus, 5px);
+}
+
+
+/* disabled state */
+
+.toggle__input:disabled~.toggle__label {
+    opacity: var(--toggleOpacityDisabled, .24);
+    cursor: var(--toggleCursorDisabled, not-allowed);
+    user-select: none;
+}
+
+
+/*
+  =====
+  PRESENTATION STYLES
+  =====
+  */
+
+
+/*
+  The demo skin
+  */
+
+.toggle__label::after {
+    border-radius: var(--toggleBorderRadius, 2px);
+}
+
+
+/*
+  The animation of switching states
+  */
+
+.toggle__input:not(:disabled)~.toggle__label::before {
+    will-change: width, height;
+    opacity: 0;
+}
+
+.toggle__input:not(:disabled):checked~.toggle__label::before {
+    opacity: 1;
+    transition: opacity .1s ease-out .25s, width .1s ease-out .5s, height .2s ease-out .3s;
+}
+
+.toggle__input:not(:disabled)~.toggle__label::after {
+    will-change: background-color;
+    transition: background-color .2s ease-out;
+}
+
+
+/*
+  =====
+  SETTINGS
+  =====
+  */
+
+.page__custom-settings {
+    --toggleColor: rgb(226, 15, 50);
+    --toggleOutlineColorFocus: #ffffff;
+    --toggleSize: 25px;
+}
+
+
+/*
+  =====
+  DEMO
+  =====
+  */
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Open Sans, Ubuntu, Fira Sans, Helvetica Neue, sans-serif;
+    /* background-color: #f0f0f0; */
+    display: flex;
+    flex-direction: column;
+}
+
+.page {
+    box-sizing: border-box;
+    /* max-width: 45rem; */
+    padding: 2.75rem 2rem 2.5rem;
+    margin: 30px 0;
+    background-color: #fff;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .12), 0 1px 5px 0 rgba(0, 0, 0, .2);
+    border-radius: 2px;
+}
+
+.page__section {
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: 700;
+}
+
+.page__section:nth-child(n+2) {
+    margin-top: 3rem;
+}
+
+.page__custom-settings {
+    --pageToggleTextFontSize: 1.25rem;
+}
+
+.page__name {
+    width: 100%;
+}
+
+.page__name::first-letter {
+    text-transform: uppercase;
+}
+
+.page__toggle {
+    margin-top: 1.25rem;
+    margin-right: 1.5rem;
+    font-size: var(--pageToggleTextFontSize);
+    padding-bottom: 12px;
+}
+
+@media(max-width:1200px) {
+    .show-form {
+        /* width: 80%; */
+        margin-top: 70px;
+        margin-bottom: 100px;
+        padding: 0 100px;
+    }
+    .city {
+        margin-bottom: 12px;
+    }
+}
+
+@media(max-width:992px) {
+    .show-form {
+        /* width: 80%; */
+        margin-top: 70px;
+        margin-bottom: 120px;
+        padding: 0 50px;
+    }
+}
+
+@media(max-width:768px) {
+    .city {
+        margin-bottom: 12px;
+    }
+    .show-form {
+        /* width: 80%; */
+        margin-top: 70px;
+        margin-bottom: 120px;
+        padding: 0 20px;
+    }
+}
+
+@media(max-width:415px) {
+    .city-input select {
+        width: 260px;
+        height: 30px;
+        border-radius: 4px;
+        border-color: rgba(0, 0, 0, 0.171);
+        /* box-shadow: 2px 2px 2px 2px rgba(255, 255, 255, 0.5); */
+    }
+    .title-img .form-title input {
+        border-radius: 4px;
+        border-color: rgba(0, 0, 0, 0.171);
+        width: 260px;
+        height: 30px;
+    }
+    .type select {
+        width: 260px;
+        height: 30px;
+        border-radius: 4px;
+        border-color: rgba(0, 0, 0, 0.281);
+        /* box-shadow: 2px 2px 2px 2px rgba(255, 255, 255, 0.5); */
+    }
+}

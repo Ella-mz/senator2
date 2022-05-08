@@ -1,0 +1,256 @@
+.agahi-detail {
+    background-color: #fff;
+}
+.req-category-txtbox {
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+    border-radius: 6px;
+    padding: 20px 15px;
+    margin-bottom: 20px;
+    background-color: rgb(247, 247, 247);
+    min-height: 150px;
+}
+.request-register-form .category-order {
+    padding: 10px 2px 10px 10px;
+    border-bottom: 1px solid;
+    width: max-content;
+    margin-bottom: 20px;
+}
+.main-topsearchboxes {
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+    border-radius: 6px;
+    padding: 20px 15px;
+    margin-bottom: 20px;
+    background-color: rgb(247, 247, 247);
+    min-height: 150px;
+}
+.request-register-form {
+    height: fit-content;
+}
+.request-register-form .request-register-form-title {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+.request-register-form .request-register-form-title span {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    /* color: blue; */
+    margin-left: 5px;
+    background-color: #2a2929;
+}
+.request-register-form .request-form {
+    /* border: 1px solid rgb(179, 179, 179); */
+    border-radius: 10px;
+}
+.request-register-form .request-form .polyganBg {
+    border-radius: 10px;
+}
+.request-register-form .request-form .add-new-link {
+    padding: 10px 20px;
+    background-color: rgb(199, 199, 199);
+    border-radius: 10px 10px 0 0;
+    line-height: 32px;
+    text-align: center;
+}
+.request-register-form .request-form .add-new-link a {
+    padding: 6px 8px;
+    border-radius: 8px;
+    background-color: #ff7272;
+    color: #ffffff;
+    text-shadow: 0 1px 2px #fff;
+    margin: 0px 4px;
+    font-size: 13px;
+}
+.request-register-form .main-inputs-form {
+    text-align: center;
+    margin-top: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+    border-radius: 6px;
+    padding: 20px 15px;
+    margin-bottom: 20px;
+    background-color: rgb(247, 247, 247);
+    min-height: 150px;
+}
+/* .request-register-form  .main-inputs-form .title{
+    font-weight: bold;
+    margin-bottom: 20px;
+} */
+.request-register-form label.simple-label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+.request-register-form .simple-txt-input {
+    height: 32px;
+    width: 285px;
+    border-radius: 4px;
+    border: 1px solid #c7c7c7;
+}
+.request-register-form .simple-txt-input.large {
+    height: 105px;
+    width: 300px;
+    padding: 10px;
+}
+.request-register-form .simple-txt-input.large::placeholder {
+    padding: 1px;
+}
+.request-register-form .main-inputs-form input {
+    margin-bottom: 30px;
+    padding: 5px;
+}
+.request-register-form .main-inputs-form input::placeholder {
+    padding: 2px;
+}
+.request-register-form .select-box {
+    position: relative;
+    width: 285px;
+    margin-bottom: 30px;
+    padding: 0;
+}
+.request-register-form .select-box .select-arrow {
+    position: absolute;
+    top: 34px;
+    left: 12px;
+    opacity: 45%;
+}
+.request-register-form .simple-select-input {
+    height: 32px;
+    width: 285px;
+    border-radius: 4px;
+    border: 1px solid #c7c7c7;
+}
+.request-register-form .simple-text-area {
+    border-radius: 4px;
+    border: 1px solid #c7c7c7;
+    width: 70%;
+}
+.request-register-form .double-inputs {
+    display: flex;
+    align-items: center;
+}
+.request-register-form .double-inputs div {
+    margin: 0 8px;
+}
+.request-register-form .double-inputs .double-txt-input {
+    height: 28px;
+    width: 150px;
+    border-radius: 4px;
+    border: 1px solid #c7c7c7;
+}
+.request-register-form .double-inputs .double-select-input {
+    height: 28px;
+    width: 150px;
+    border-radius: 4px;
+    border: 1px solid #c7c7c7;
+}
+.request-register-form .form-agahi-btn .save-rq {
+    padding: 5px 30px;
+    background: #2a2929;
+    color: #fff;
+    border-radius: 8px;
+    margin: 0 4px;
+    font-size: 16px;
+    border: 1px solid #2a2929;
+}
+
+.chosen-container-single .chosen-single {
+    height: 32px;
+    width: 285px;
+    border-radius: 4px;
+    border: 1px solid #c7c7c7;
+
+    background: unset;
+    background-color: #fff;
+    box-shadow: unset;
+}
+.chosen-container-single .chosen-single span {
+    margin-right: 16px;
+}
+.chosen-container-single .chosen-single div {
+    margin-left: 10px;
+    left: 0;
+    right: unset;
+}
+.chosen-container-single .chosen-drop {
+    width: 285px;
+}
+.chosen-container .chosen-results li.active-result.highlighted {
+    background-color: teal;
+    background-color: #ddb24f;
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(20%, #ddb24f),
+        color-stop(90%, #ddb24f)
+    );
+    background-image:unset;
+    color: #fff;
+}
+.submit-mobile-btn{
+    border:none;
+    background-color: yellow;
+    border-radius: 6px;
+    padding: 6px 18px;
+
+}
+/* .chosen-container.chosen-container-single{
+  width: unset !important;
+} */
+@media (max-width: 768px) {
+    .request-register-form .main-inputs-form input {
+        margin-bottom: 12px;
+    }
+    .request-register-form .main-inputs-form input.simple-txt-input {
+        width: 270px;
+        height: 30px;
+    }
+    .request-register-form .select-box {
+        width: 270px;
+    }
+    .request-register-form .simple-select-input {
+        width: 270px;
+        height: 30px;
+    }
+    .request-register-form .double-inputs .double-select-input {
+        margin-bottom: 12px;
+    }.chosen-container-single .chosen-single{
+         width: 270px;
+         height: 30px;
+     }.chosen-container{
+          width: 270px;
+      }
+}
+@media (max-width: 480px) {
+    .request-register-form .simple-select-input {
+        width: 240px;
+        height: 30px;
+    }
+    .request-register-form .main-inputs-form input.simple-txt-input {
+        width: 240px;
+        height: 30px;
+    }
+    .request-register-form .select-box {
+        width: 240px;
+    }
+    .request-register-form .double-inputs {
+        flex-direction: column;
+    }
+    .request-register-form .double-inputs .double-txt-input {
+        height: 30px;
+        width: 180px;
+    }
+    .request-register-form .double-inputs .double-select-input {
+        height: 30px;
+        width: 180px;
+    }.request-register-form .simple-txt-input.large{
+         width: 270px;
+     }.chosen-container-single .chosen-single{
+          width: 240px;
+          height: 30px;
+      }.chosen-container{
+           width: 240px;
+           height: 30px;
+       }
+}

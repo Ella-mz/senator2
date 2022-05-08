@@ -1,0 +1,13 @@
+{
+    "name": "AttributeItem",
+    "alias": "attributeitem",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\AttributeItem\\Providers\\AttributeItemServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

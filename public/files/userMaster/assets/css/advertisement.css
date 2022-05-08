@@ -1,0 +1,200 @@
+body {
+  background: rgb(240, 240, 240);
+}
+.ads-page-top-header {
+  /*background: url(../img/mahdiar-mahmoodi-njMiPKv0Vgk-unsplash.png);*/
+  height: 260px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  color: #2a2929;
+}
+.ads-page-top-header::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  opacity: 85%;
+  background-color: #FFF4B8;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.ads-page-top-header .ads-page-main-title {
+  margin-top: 60px;
+  z-index: 1;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.ads-boxes-mainBox {
+  background: white;
+  padding: 30px 20px;
+  border-radius: 10px;
+
+  position: relative;
+  top: -120px;
+  min-height: 200px;
+}
+.ads-boxes-mainBox .ad-box {
+  border-radius: 8px;
+  box-shadow: 0 1px 4px #d7d6d6;
+  /* padding: 10px 15px; */
+}
+.ads-boxes-mainBox .ad-box .ad-page-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 16px;
+  /* border-bottom: 1px solid rgb(179, 179, 179); */
+  margin-bottom: 12px;
+  font-size: 16px;
+  background-color: #ddb24f;
+  border-radius: 8px 8px 0 0;
+  color: #fff;
+}
+.ads-boxes-mainBox .ad-box .ad-page-title.other-pages{
+    background-color: #6f6e74;
+}
+.ads-boxes-mainBox .ad-box .ad-info {
+  padding: 10px 15px;
+}
+.ads-boxes-mainBox .ad-box .ad-info .ad-main {
+  margin-bottom: 16px;
+  display: flex;
+  align-items: flex-start;
+}
+.mainPage-adds-main-title{
+    font-size: 20px;
+    margin-bottom: 24px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+
+}.mainPage-adds-main-title span{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #ddb24f;
+
+    margin-left: 6px;
+}
+.ads-boxes-mainBox .ad-box .ad-info .ad-name {
+  font-size: 16px;
+  font-weight: bold;
+  width: 55%;
+}
+.ads-boxes-mainBox .ad-box .ad-info .ad-name p {
+  margin-bottom: 20px;
+}
+
+.ads-boxes-mainBox .ad-box .ad-info .ad-name .ad-more-info {
+  font-size: 13px;
+  font-weight: 500;
+}
+.ads-boxes-mainBox .ad-box .ad-info .ad-pic {
+  width: 45%;
+  height: 160px;
+  border-radius: 4px;
+  overflow: hidden;
+  object-fit: contain;
+  position: relative;
+}
+.ads-boxes-mainBox .ad-box .ad-info .ad-pic img {
+  width: 100%;
+  border-radius: 4px;
+}
+.ads-boxes-mainBox .ad-box .ad-info .ad-pic .zoom-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  background-color: #FFF4B8;
+  display: flex;
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.43s;
+  padding: 1.14286em;
+  backdrop-filter: blur(1px);
+  font-size: 45px;
+}
+.ads-boxes-mainBox .ad-box .ad-info .ad-pic .zoom-overlay a {
+  position: absolute;
+  top: -20px;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+.ads-boxes-mainBox .ad-box .ad-info .ad-pic .zoom-overlay > * {
+  transform: translateY(20px);
+  transition: transform 0.43s;
+}
+
+.ads-boxes-mainBox .ad-box .ad-info .ad-pic .zoom-overlay:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.ads-boxes-mainBox .ad-box .ad-info .ad-pic .zoom-overlay:hover > * {
+  transform: translateY(0px);
+}
+.ads-boxes-mainBox .ad-box .ad-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #ddb24f;
+  font-size: 15px;
+}
+.ads-boxes-mainBox .ad-box .ad-details .ad-price {
+  font-size: 16px;
+}
+.ads-boxes-mainBox .ad-box .ad-details .seemore {
+  font-weight: bold;
+  position: relative;
+}
+.ads-boxes-mainBox .ad-box .ad-details .seemore a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+}.ad-pic.zoomed{
+  width: 100%;
+}
+.ad-pic.zoomed img{
+    width: 100%;
+    height: 700px;
+}.otherPages-ads{
+    border-top: 1px solid #dddddd;
+    padding-top: 15px;
+}
+.modal{
+    text-align: center;
+}
+@media(max-width:468px){
+    .ads-boxes-mainBox .ad-box .ad-info .ad-main{
+        margin-bottom: 6px;
+    }.ads-boxes-mainBox{
+        padding: 20px;
+    }.mainPage-adds-main-title{
+        font-size: 18px;
+        margin-bottom: 20px;
+
+
+    }
+}@media(max-width:768px){
+    .ad-pic.zoomed img{
+        width: 85%;
+        height: 600px;
+
+    }
+}@media(max-width:468px){
+    .ad-pic.zoomed img{
+        width: 85%;
+        height: 500px;
+
+    }
+}

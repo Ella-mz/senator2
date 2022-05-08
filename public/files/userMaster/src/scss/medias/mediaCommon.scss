@@ -1,0 +1,33 @@
+@media (max-width: 991px) {
+  button.view-all {
+    font-size: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  section.several-advertising-section {
+    grid-template-columns: 100%;
+    grid-gap: 0;
+
+    div.advertising-placeholder {
+    }
+  }
+
+  section.space-section {
+    h3.space-section-title {
+      font-size: 1.1rem;
+      padding: 1rem;
+      margin: 1rem;
+    }
+  }
+
+  div.swiper-button-prev,
+  div.swiper-button-next {
+    width: 30px;
+    height: 30px;
+
+    &:after {
+      font-size: 18px;
+    }
+  }
+}

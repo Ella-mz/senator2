@@ -1,0 +1,218 @@
+.singlePageTopHeader {
+    background-color: rgb(61, 61, 218);
+    height: 160px;
+}
+
+.singlePageTopHeader .PicblankSpace {
+    height: 85px;
+}
+
+.singlePageTopHeader .blankSpace {
+    height: 125px;
+}
+
+.singlePageTopHeader .topContractorInfo {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.singlePageTopHeader .contarctorPic {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    background-color: lightsteelblue;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: contain;
+}
+
+.singlePageTopHeader .tags-menu {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 16px;
+}
+
+.singlePageTopHeader .tags-menu li {
+    margin-left: 10px;
+}
+
+.singlePageTopHeader .tags-menu li a:hover {
+    color: #fff;
+}
+
+.singlePageTopHeader .tags-menu li a i {
+    margin-right: 4px;
+}
+
+.singlePageTopHeader .contractorRating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 8px 0;
+}
+
+.singlePageTopHeader .contractorRating img {
+    width: 14px;
+    height: 14px;
+    margin: 0 2px;
+}
+
+.singlePageTopHeader .contractorName {
+    font-size: 18px;
+    color: #353535
+}
+
+.contactorInfo {
+    margin-top: 100px;
+}
+
+.contactorInfo .DetailInfoBox {
+    /* border: 1px solid #919191; */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 20%);
+    padding: 20px 20px 20px 20px;
+    font-size: 16px;
+    margin-top: 12px;
+}
+
+.contactorInfo .DetailInfoBox ul {
+    color: #696969;
+    line-height: 36px;
+}
+
+.contactorInfo .ContractorProjectsBox {
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 20%);
+    padding: 8px 8px 8px 8px;
+}
+
+.contactorInfo .ContractorProjectsBox .imageBox {
+    height: 150px;
+    overflow: hidden;
+    object-fit: contain;
+    border-radius: 4px;
+}
+
+.contactorInfo .ContractorProjectsBox .imageBox img {
+    width: 100%;
+    height: 100%;
+}
+
+.contactorInfo .contractorProjectTabnavigation {
+    margin-bottom: 25px;
+}
+
+.contactorInfo .contractorProjectTabnavigation .tabs {
+    display: flex;
+    justify-content: center;
+}
+
+.contactorInfo .contractorProjectTabnavigation .tabs li {
+    font-size: 15px;
+    margin: 0 10px;
+    border: 1px solid #a0a0a0;
+    padding: 2px 8px;
+    width: 160px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.contactorInfo .contractorProjectTabnavigation .tabs li:hover {
+    cursor: pointer;
+}
+
+.contactorInfo .contractorProjectTabnavigation .tabs li.selected {
+    background-color: rgb(61, 61, 218);
+    color: #fff;
+    border-color: rgb(61, 61, 218);
+}
+
+.contactorInfo .ContractorProjectsBox .Projectinfo {
+    /*display: flex;*/
+    margin-bottom: 15px;
+}
+.contactorInfo .ContractorProjectsBox .Projectinfo .projectTitle{
+    display: flex;
+}
+.contactorInfo .ContractorProjectsBox .Projectinfo .title {
+    display: flex;
+    color: #797979;
+    font-size: 15px;
+    margin-left: 8px;
+}
+
+.contactorInfo .tabContent .tabContent {
+    display: none;
+}
+
+.contactorInfo .tabContent .tabContent.selected {
+    display: block;
+}
+
+.contactorInfo .skil {
+    min-height: 450px;
+    margin-bottom: 100px;
+}
+
+.contactorInfo .skil .skil-show .skil-heder-title {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.959);
+    padding: 15px 100px;
+}
+
+.contactorInfo .skil .skil-show .skil-title-score {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.473);
+    padding: 0 80px;
+    align-items: center;
+}
+
+.contactorInfo .skil .skil-show .skil-title-score p {
+    font-size: 17px;
+    color: rgba(0, 0, 0, 0.63);
+    /* border-bottom: 1px solid black; */
+    padding: 15px 0;
+}
+
+.contactorInfo .skil .skil-show .skil-title-score img {
+    width: 16px;
+    height: 16px;
+    margin: 0 2px;
+}
+
+@media(max-width:768px) {
+    .singlePageTopHeader .blankSpace {
+        height: 0px;
+    }
+    .singlePageTopHeader .tags-menu {
+        color: #353535;
+        justify-content: center;
+        margin: 20px 0 30px 0;
+        font-size: 15px;
+    }
+    .singlePageTopHeader .tags-menu li a:hover {
+        color: #353535;
+    }
+    .singlePageTopHeader .tags-menu li {
+        margin-left: 6px;
+    }
+    .contactorInfo .DetailInfoBox {
+        margin: 40px 0;
+    }
+    .contactorInfo .skil .skil-show .skil-title-score {
+        padding: 0 30px;
+    }
+    .contactorInfo .skil .skil-show .skil-title-score img {
+        width: 15px;
+        height: 15px;
+        margin: 0 1px;
+    }
+}

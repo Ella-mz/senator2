@@ -1,0 +1,13 @@
+{
+    "name": "GroupAttribute",
+    "alias": "groupattribute",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\GroupAttribute\\Providers\\GroupAttributeServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

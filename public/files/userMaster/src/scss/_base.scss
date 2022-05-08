@@ -1,0 +1,62 @@
+@import './fonts';
+
+$color-light:#fff;
+$color-light-2:#faf6fb;
+$color-gray:#eeeeee;
+$color-gray-2:#979797;
+$color-gray-3:#3e3f3f;
+$color-error:#ef5662;
+$color-dark:#000000;
+
+$color-font:#F4F9F9;
+$color-background:#faf6fb;
+$color-selected:#00bfd6;
+$color-success: #00bd56;
+
+//dolatsara
+$color-purple : #ddb24f;
+$color-gray-4:#b8b8b8;
+$color-gray-2-2:#ADB0B3;
+$color-gray-5:#e9e9e9;
+
+html {
+    ::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: rgba($color: $color-gray-3, $alpha: .2);
+        border-radius: 10px;
+
+        &:hover {
+            background: rgba($color: $color-gray-3, $alpha: .5);
+        }
+    }
+}
+
+body {
+    font-family: 'Samim';
+    background-color: $color-light;
+    font-size: 100%;
+    direction: rtl;
+    box-sizing: border-box;
+
+    a:focus {
+        outline: 0;
+    }
+
+    .container-fluid {
+        padding: 0;
+        margin: 0;
+    }
+}
+
+@mixin section-style {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    margin: 2rem 0;
+}

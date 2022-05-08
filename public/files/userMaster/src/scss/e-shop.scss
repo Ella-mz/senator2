@@ -1,0 +1,210 @@
+@import "./base";
+
+section.shipping-time {
+  height: 200px;
+  padding: 2rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  div.owl-dots {
+    display: none;
+  }
+
+  div.owl-nav {
+    button.owl-prev,
+    button.owl-next {
+      position: absolute;
+      top: 10px;
+      font-size: 3rem;
+      width: 30px;
+      height: 150px;
+      z-index: 10;
+      border: 1px solid rgba($color: $color-gray-2, $alpha: 0.75);
+      margin: 0;
+
+      &:hover,
+      &:focus {
+        background-color: rgba($color: $color-gray-3, $alpha: 0.2);
+        color: rgba($color: $color-selected, $alpha: 1);
+        border: none;
+      }
+
+      &:focus,
+      &:active {
+        border: none;
+        outline: none;
+        border-color: transparent !important;
+      }
+    }
+
+    button.owl-prev {
+      right: 0;
+    }
+
+    button.owl-next {
+      left: 0;
+    }
+
+    button.owl-next.disabled,
+    button.owl-prev.disabled {
+      opacity: 0.4;
+
+      &:hover,
+      &:focus {
+        color: rgba($color: $color-gray-2, $alpha: 0.75);
+      }
+    }
+  }
+
+  div.owl-carousel.owl-theme {
+    width: 100%;
+
+    div.owl-stage-outer {
+      width: calc(100% - 90px);
+      position: relative;
+      right: 45px;
+
+      div.owl-stage {
+        // width: 100%;
+
+        div.owl-item {
+          div.slide-item.item {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: flex-start;
+            height: 170px;
+            margin: 0 0.5rem;
+
+            h5.shipping-time__day-name {
+              color: rgba($color: $color-gray-3, $alpha: 1);
+              font-weight: 600;
+              font-size: 1.1rem;
+            }
+
+            h5.holiday {
+              color: rgba($color: $color-error, $alpha: 1);
+            }
+
+            span.shipping-time__date {
+              font-size: 14px;
+              color: rgba($color: $color-gray-2, $alpha: 1);
+            }
+
+            ul.shipping-time__hour-list {
+              display: flex;
+
+              li.shipping-time__hour-list-item {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                width: 140px;
+
+                &:nth-child(1) > label.shipping-time-hour-list-label {
+                  border-top-right-radius: 8px;
+                  border-bottom-right-radius: 8px;
+                }
+
+                &:last-child > label.shipping-time-hour-list-label {
+                  border-top-left-radius: 8px;
+                  border-bottom-left-radius: 8px;
+                }
+
+                input[name="shipping-time-input"] {
+                  display: none;
+
+                  &:checked + label.shipping-time-hour-list-label {
+                    border: 3px solid rgba($color: $color-selected, $alpha: 1);
+                    box-shadow: 0 8px 13px -8px rgba($color: $color-selected, $alpha:
+                          0.3);
+                    background-color: rgba(
+                      $color: $color-selected,
+                      $alpha: 0.03
+                    );
+                    cursor: default;
+                  }
+
+                  &:checked
+                    + label.shipping-time-hour-list-label
+                    > span.shipping-time__hour-list-scope {
+                    color: rgba($color: $color-selected, $alpha: 1);
+                  }
+                }
+
+                label.shipping-time-hour-list-label {
+                  height: 100%;
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: space-between;
+                  border: 1px solid rgba($color: $color-gray-2, $alpha: 0.75);
+                  padding: 1rem 0.5rem;
+                  position: relative;
+                  cursor: pointer;
+
+                  span.shipping-time__hour-list-scope {
+                    font-weight: 600;
+                    margin-bottom: 0.5rem;
+                  }
+
+                  span.shipping-time__hour-list-price {
+                    font-size: 14px;
+                    color: rgba($color: $color-gray-2, $alpha: 1);
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+section.radio-inputs {
+  position: relative;
+
+  input[type="radio"] {
+    position: absolute;
+    visibility: hidden;
+    display: none;
+  }
+
+  label {
+    color: rgba($color: $color-dark, $alpha: .7);
+    display: inline-block;
+    cursor: pointer;
+    padding: 6px 10px;
+    font-size: 12px;
+    user-select: none;
+  }
+
+  input[type="radio"]:checked + label.confirm {
+    color: lighten($color-success, 60%);
+    background: $color-success;
+    border-left: solid 2px rgba($color: $color-dark, $alpha: .7);
+  }
+
+  input[type="radio"]:checked + label.pending {
+    color: lighten($color-gray-4, 60%);
+    background: $color-gray-4;
+    border-left:solid 2px rgba($color: $color-dark, $alpha: .7);
+    border-right: solid 2px rgba($color: $color-dark, $alpha: .7);
+  }
+
+  input[type="radio"]:checked + label.rejected {
+    color: lighten($color-error, 60%);
+    background: $color-error;
+    border-left: solid 2px $color-error;
+    border-right: solid 2px rgba($color: $color-dark, $alpha: .7);
+  }
+
+  .radio-group {
+    border: solid 2px rgba($color: $color-dark, $alpha: .7);
+    display: inline-block;
+    margin: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+}

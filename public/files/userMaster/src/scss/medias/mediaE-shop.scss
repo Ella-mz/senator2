@@ -1,0 +1,72 @@
+@media(max-width:768px) {
+    
+section.shipping-time {
+    padding: 2rem 1rem;
+    height: max-content;
+  
+    div.owl-nav {
+      button.owl-prev,
+      button.owl-next {
+        width: 25px;
+      }
+    }
+  
+    div.owl-carousel.owl-theme {
+      div.owl-stage-outer {
+        width: calc(100% - 60px);
+        right: 30px;
+  
+        div.owl-stage {
+          div.owl-item {
+            div.slide-item.item {
+              height: max-content;
+              margin: 0 0.5rem;
+  
+              h5.shipping-time__day-name {
+                font-size: 1rem;
+                margin-bottom: .5rem;
+              }
+
+              h5.holiday {
+              }
+  
+              span.shipping-time__date {
+                margin-bottom: .5rem;
+                font-size: 13px;
+              }
+  
+              ul.shipping-time__hour-list {
+               flex-direction: column;
+               height: max-content;
+
+                li.shipping-time__hour-list-item {
+                  width: 130px;
+                  margin-bottom: .5rem;
+                  
+                  label.shipping-time-hour-list-label {
+                    display: flex;
+                    flex-direction: column;
+                    padding: 1rem 0.5rem;
+                    border-radius: 8px;
+  
+                    span.shipping-time__hour-list-scope {
+                    }
+  
+                    span.shipping-time__hour-list-price {
+                      font-size: 13px;
+                    }
+                  }
+  
+                  label.selector {
+                    span.shipping-time__hour-list-scope {}
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
+}

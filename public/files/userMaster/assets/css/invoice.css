@@ -1,0 +1,91 @@
+body{
+    background: rgb(238, 238, 238);
+}
+.invoice-main-page{
+
+}
+section.invoice-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 40px;
+}section.invoice-page .show-invoice{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+ }
+section.invoice-page .show-invoice .invoice-title{
+    color:#23376c;
+    margin-bottom: 30px;
+
+}section.invoice-page .show-invoice .invoice-image{
+     width: 140px;
+     height: 100px;
+     object-fit: contain;
+     margin-bottom: 24px;
+ }section.invoice-page .show-invoice .invoice-image img{
+      width: 100%;
+      height: 100%;
+  }section.invoice-page .show-invoice .invoice-info-box{
+       border-radius: 8px;
+       border: 2px solid rgb(114, 114, 114);
+       color: rgb(53, 53, 53);
+       font-weight: bold;
+       padding: 15px 15px;
+       margin:15px 10px;
+       font-size: 15px;
+       width: 500px;
+       text-align: center;
+   }section.invoice-page .show-invoice .invoice-info-box ul li{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid rgb(199, 199, 199);
+        margin-bottom: 16px;
+        padding-bottom: 10px;
+        flex-wrap: wrap;
+    }
+section.invoice-page .show-invoice .invoice-info-box ul li:last-child{
+    border: none;
+    margin-bottom: 0px;
+}
+
+
+/* section.invoice-page .show-invoice .invoice-info-box .title{
+    margin-bottom: 8px;
+} */
+section.invoice-page .sub-invoice-btns{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}section.invoice-page .sub-invoice-btns .sub-invoice-button{
+     margin: 0 8px;
+     padding: 6px 18px;
+     border: 1px solid #23376c;
+     border-radius: 6px;
+     font-size: 15px;
+     background-color:#23376c ;
+     color: #fff;
+ }section.invoice-page .sub-invoice-btns .sub-invoice-button.cancel{
+      background-color: #979797;
+      border-color: #979797;
+  }
+@media(max-width:768px){
+    section.invoice-page .show-invoice .invoice-info-box{
+
+        width: 400px;
+
+    }
+}@media(max-width:468px){
+    section.invoice-page .show-invoice .invoice-info-box{
+
+        width: 300px;
+
+    }
+}
+footer{
+    position: absolute;
+}

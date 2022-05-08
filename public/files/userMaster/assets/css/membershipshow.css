@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.title {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.title h1 {
+    font-size: 32px;
+}
+
+.OpportunitiesPacakges .title p {
+    padding: 20px 260px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.packageBox {
+    border-radius: 10px;
+    box-shadow: 1px 3px 6px #5B5B5B;
+    background-color: #fff;
+    padding-bottom: 16px;
+    position: relative;
+    padding: 60px 16px 16px 16px;
+}
+
+.packageBox .imageBox {
+    width: 85px;
+    height: 85px;
+    overflow: hidden;
+    border-radius: 50px;
+    position: absolute;
+    top: -16%;
+    left: 36%;
+    background-color: rgb(10, 10, 10);
+    box-shadow: 0px 3px 6px #414141;
+    padding: 12px;
+}
+
+@media(max-width:767px) {
+    .packageBox .imageBox {
+        width: 85px;
+        height: 85px;
+        overflow: hidden;
+        border-radius: 50px;
+        position: absolute;
+        top: -16%;
+        left: 40%;
+        background-color: rgb(199 57 57);
+        box-shadow: 0px 3px 6px #414141;
+        padding: 12px;
+    }
+}
+
+@media(max-width:475px) {
+    .packageBox .imageBox {
+        width: 85px;
+        height: 85px;
+        overflow: hidden;
+        border-radius: 50px;
+        position: absolute;
+        top: -16%;
+        left: 38%;
+        background-color: rgb(199 57 57);
+        box-shadow: 0px 3px 6px #414141;
+        padding: 12px;
+    }
+}
+
+@media(max-width:400px) {
+    .packageBox .imageBox {
+        width: 85px;
+        height: 85px;
+        overflow: hidden;
+        border-radius: 50px;
+        position: absolute;
+        top: -16%;
+        left: 36%;
+        background-color: rgb(199 57 57);
+        box-shadow: 0px 3px 6px #414141;
+        padding: 12px;
+    }
+}
+
+@media(max-width:350px) {
+    .packageBox .imageBox {
+        width: 80px;
+        height: 80px;
+        overflow: hidden;
+        border-radius: 50px;
+        position: absolute;
+        top: -16%;
+        left: 35%;
+        background-color: rgb(199 57 57);
+        box-shadow: 0px 3px 6px #414141;
+        padding: 12px;
+    }
+}
+
+.packageBox .packagesTitle {
+    font-size: 18px;
+    font-weight: 500px;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.packageBox .buyingBtn {
+    display: flex;
+    justify-content: center;
+}
+
+.packageBox .buyingBtn button {
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    padding: 6px 20px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+    margin-top: 12px;
+    background: rgb(61 51 212);
+}
+
+.packageBox .packageDetail {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+}
+
+.packageBox .packageDetail ul {
+    align-items: flex-start;
+}
+
+.packageBox .packageDetail ul li {
+    margin-bottom: 4px;
+    font-weight: 500;
+    color: #414141;
+}
+
+.packageBox .packageDetail ul.detailInfos span {
+    font-weight: bold;
+    color: #707070;
+}
+
+@media(max-width:1200px) {
+    .OpportunitiesPacakges .title p {
+        padding: 20px 50px;
+    }
+}
+
+@media(max-width:468px) {
+    .OpportunitiesPacakges .title p {
+        padding: 8;
+    }
+}

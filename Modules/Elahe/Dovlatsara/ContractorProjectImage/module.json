@@ -1,0 +1,13 @@
+{
+    "name": "ContractorProjectImage",
+    "alias": "contractorprojectimage",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\ContractorProjectImage\\Providers\\ContractorProjectImageServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

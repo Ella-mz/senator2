@@ -1,0 +1,13 @@
+{
+    "name": "AdminMasterNew",
+    "alias": "adminmasternew",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\AdminMasterNew\\Providers\\AdminMasterNewServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}
