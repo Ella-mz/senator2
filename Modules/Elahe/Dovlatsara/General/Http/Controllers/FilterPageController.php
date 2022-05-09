@@ -92,7 +92,7 @@ class FilterPageController extends Controller
             if ($ads_count>0)
                 $pagination = $this->paginateObjects($page, $totalPage);
             else
-                $pagination = '<span style="color: rebeccapurple">داده ای با این مشخصات یافت نشد.</span>';
+                $pagination = '<span style="color: #ddb24f">داده ای با این مشخصات یافت نشد.</span>';
             return response()->json([
                 'pagination' => $pagination,
                 'content' => $this->supplierCard($ads->skip($page>1?$page * $paginate:0)->take($paginate)->get()),
@@ -109,7 +109,7 @@ class FilterPageController extends Controller
             if ($totalPage>0)
                 $pagination = $this->paginateObjects($page, $totalPage);
             else
-                $pagination = '<span style="color: rebeccapurple">داده ای با این مشخصات یافت نشد.</span>';
+                $pagination = '<span style="color: #ddb24f">داده ای با این مشخصات یافت نشد.</span>';
             return response()->json([
                 'pagination' => $pagination,
                 'content' => $this->supplierCard($ads->skip($page * $paginate)->take($paginate)->get()),

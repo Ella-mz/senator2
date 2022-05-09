@@ -10,28 +10,28 @@
         <div class="container-fluid">
             <div class="row">
                 @can('LevelUpAccountPanel')
-                    @if(isset($levelupToAdminOfAgency->str_value))
-                    <div class="col-md-1">
+{{--                    @if(isset($levelupToAdminOfAgency->str_value))--}}
+{{--                    <div class="col-md-1">--}}
 
-                    </div>
-                    <div class="col-md-8 justify-content-center align-items-end d-flex">
-                        <div class="card">
-                            <div class="card-body">
-                                <form target="_blank" action="{{route('auth.realestate.registerForm.user')}}"
-                                      id="register_business" method="get"
-                                      style="display: unset">
-                                    <input hidden name="user" value="{{$user->user_id}}">
-                                    <a target="_blank" onclick="document.getElementById('register_business').submit()"
-                                       style="cursor: pointer">
-                                        <img src="{{asset($levelupToAdminOfAgency->str_value)}}"
-                                             style="max-width: 100%;max-height: 150px">
-                                    </a>
-                                </form>
+{{--                    </div>--}}
+{{--                    <div class="col-md-8 justify-content-center align-items-end d-flex">--}}
+{{--                        <div class="card">--}}
+{{--                            <div class="card-body">--}}
+{{--                                <form target="_blank" action="{{route('auth.realestate.registerForm.user')}}"--}}
+{{--                                      id="register_business" method="get"--}}
+{{--                                      style="display: unset">--}}
+{{--                                    <input hidden name="user" value="{{$user->user_id}}">--}}
+{{--                                    <a target="_blank" onclick="document.getElementById('register_business').submit()"--}}
+{{--                                       style="cursor: pointer">--}}
+{{--                                        <img src="{{asset($levelupToAdminOfAgency->str_value)}}"--}}
+{{--                                             style="max-width: 100%;max-height: 150px">--}}
+{{--                                    </a>--}}
+{{--                                </form>--}}
 
-                            </div>
-                        </div>
-                    </div>
-                @endif
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                @endif--}}
                 @endcan
 
                 <div class="col-md-1">
@@ -205,19 +205,19 @@
                                                         {{--                                </td>--}}
                                                         {{--                            </tr>--}}
                                                         {{--                        @endcan--}}
-                                                        @can('mobasherCardImage')
-                                                            <tr>
-                                                                <th>عکس کارت مباشر</th>
-                                                                <td>
-                                                                    @if(isset($user->mobasherCardImage))
-                                                                        <img src="{{asset($user->mobasherCardImage)}}"
-                                                                             width="80"
-                                                                             height="40">
-                                                                    @endif
-                                                                </td>
+{{--                                                        @can('mobasherCardImage')--}}
+{{--                                                            <tr>--}}
+{{--                                                                <th>عکس کارت مباشر</th>--}}
+{{--                                                                <td>--}}
+{{--                                                                    @if(isset($user->mobasherCardImage))--}}
+{{--                                                                        <img src="{{asset($user->mobasherCardImage)}}"--}}
+{{--                                                                             width="80"--}}
+{{--                                                                             height="40">--}}
+{{--                                                                    @endif--}}
+{{--                                                                </td>--}}
 
-                                                            </tr>
-                                                        @endcan
+{{--                                                            </tr>--}}
+{{--                                                        @endcan--}}
                                                         {{--                        @can('unionCardImage')--}}
                                                         {{--                            <tr>--}}
                                                         {{--                                <th>عکس کارت اتحادیه</th>--}}
@@ -230,22 +230,22 @@
 
                                                         {{--                            </tr>--}}
                                                         {{--                        @endcan--}}
-                                                        @can('businessLicenseImage')
+{{--                                                        @can('businessLicenseImage')--}}
 
-                                                            <tr>
+{{--                                                            <tr>--}}
 
-                                                                <th>عکس پروانه کسب</th>
-                                                                <td>
-                                                                    @if(isset($user->businessLicenseImage))
-                                                                        <img
-                                                                            src="{{asset($user->businessLicenseImage)}}"
-                                                                            width="80"
-                                                                            height="40">
-                                                                    @endif
-                                                                </td>
+{{--                                                                <th>عکس پروانه کسب</th>--}}
+{{--                                                                <td>--}}
+{{--                                                                    @if(isset($user->businessLicenseImage))--}}
+{{--                                                                        <img--}}
+{{--                                                                            src="{{asset($user->businessLicenseImage)}}"--}}
+{{--                                                                            width="80"--}}
+{{--                                                                            height="40">--}}
+{{--                                                                    @endif--}}
+{{--                                                                </td>--}}
 
-                                                            </tr>
-                                                        @endcan
+{{--                                                            </tr>--}}
+{{--                                                        @endcan--}}
 
                                                         {{--                        <tr>--}}
 

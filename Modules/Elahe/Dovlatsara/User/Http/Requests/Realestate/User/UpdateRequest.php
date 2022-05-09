@@ -76,12 +76,12 @@ class UpdateRequest extends FormRequest
             'sex' => 'required',
             'birthDate' => 'required',
             'identifierCodeFromRealEstate'=>'required|numeric',
-            'userImage'=>Rule::requiredIf($user->userImage==null),
-            'nationalCardImage'=>Rule::requiredIf($user->nationalCardImage==null),
-            'shenasnamehImage'=>Rule::requiredIf($user->shenasnamehImage==null),
-            'mobasherCardImage'=>Rule::requiredIf($user->mobasherCardImage==null),
-            'unionCardImage'=>Rule::requiredIf($user->unionCardImage==null),
-            'businessLicenseImage'=>Rule::requiredIf($user->businessLicenseImage==null),
+//            'userImage'=>Rule::requiredIf($user->userImage==null),
+//            'nationalCardImage'=>Rule::requiredIf($user->nationalCardImage==null),
+//            'shenasnamehImage'=>Rule::requiredIf($user->shenasnamehImage==null),
+//            'mobasherCardImage'=>Rule::requiredIf($user->mobasherCardImage==null),
+//            'unionCardImage'=>Rule::requiredIf($user->unionCardImage==null),
+//            'businessLicenseImage'=>Rule::requiredIf($user->businessLicenseImage==null),
         ];
     }
 }

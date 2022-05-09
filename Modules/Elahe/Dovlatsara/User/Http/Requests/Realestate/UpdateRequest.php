@@ -98,18 +98,18 @@ class UpdateRequest extends FormRequest
                     return $query->where('deleted_at', null);
                 })
             ],
-            'city' => [Rule::requiredIf(!($user->hasRole('ordinary-user') || $user->hasRole('expert')))],
+//            'city' => [Rule::requiredIf(!($user->hasRole('ordinary-user') || $user->hasRole('expert')))],
 
 //            'identifierCodeFromRealEstate'=>'required|numeric',
             'userImage' => 'max:3072',
-            'nationalCardImage' => [Rule::requiredIf($user->nationalCardImage == null && !$user->hasRole('ordinary-user')),
-                'max:3072'],
-//            'shenasnamehImage'=>Rule::requiredIf($user->shenasnamehImage==null && $user->hasPermission('shenasnamehImage')),
-            'mobasherCardImage' => [Rule::requiredIf($user->mobasherCardImage == null && $user->hasRole('real-state-administrator')),
-                'max:3072'],
-//            'unionCardImage'=>Rule::requiredIf($user->unionCardImage==null && $user->hasPermission('unionCardImage')),
-            'businessLicenseImage' => [Rule::requiredIf($user->businessLicenseImage == null && $user->hasRole('real-state-administrator')),
-                'max:3072']
+//            'nationalCardImage' => [Rule::requiredIf($user->nationalCardImage == null && !$user->hasRole('ordinary-user')),
+//                'max:3072'],
+////            'shenasnamehImage'=>Rule::requiredIf($user->shenasnamehImage==null && $user->hasPermission('shenasnamehImage')),
+//            'mobasherCardImage' => [Rule::requiredIf($user->mobasherCardImage == null && $user->hasRole('real-state-administrator')),
+//                'max:3072'],
+////            'unionCardImage'=>Rule::requiredIf($user->unionCardImage==null && $user->hasPermission('unionCardImage')),
+//            'businessLicenseImage' => [Rule::requiredIf($user->businessLicenseImage == null && $user->hasRole('real-state-administrator')),
+//                'max:3072']
         ];
     }
 }

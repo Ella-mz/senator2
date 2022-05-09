@@ -106,7 +106,7 @@
                 <div class="dolatsara__forms-box">
                     <form action="{{route('supplierFilterPage.user')}}" method="get">
                         <input type="text" class="dolatsara__search-input" name="search" value="{{old('search')}}"
-                               placeholder="جستجو در میان صد ها هزار آگهی صنعت ساختمان">
+                               placeholder="جستجو در میان صد ها هزار آگهی">
                         <button class="dolatsara__search-button">
                             <i class="fa fa-search search-icon"></i>
                         </button>

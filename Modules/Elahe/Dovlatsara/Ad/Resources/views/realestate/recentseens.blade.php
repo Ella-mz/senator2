@@ -21,7 +21,7 @@
                         <th>عنوان</th>
                         <th>شهر</th>
                         <th>نوع آگهی</th>
-                        <th>هولوگرام</th>
+{{--                        <th>هولوگرام</th>--}}
                         <th>مشاهده</th>
                     </tr>
                     </thead>
@@ -45,17 +45,17 @@
                                     فوری
                                 @endif
                             </td>
-                            @if(\Modules\HologramInterface\Entities\HologramInterface::where('type_id', $bookmark->ad->id)->where('type', 'ad')->first()
-                                                              && \Modules\HologramInterface\Entities\HologramInterface::where('type_id', $bookmark->ad->id)->where('type', 'ad')->first()->status=='approved')
-                                <td width="80" height="40">
-                                    <img src="{{asset(\Modules\HologramInterface\Entities\HologramInterface::where('type_id', $bookmark->ad->id)
-->where('type', 'ad')->first()->hologram->logo)}}" style="width: 100%; height: 50px">
-                                </td>
-                            @else
-                                <td>
-                                    <span class="badge badge-secondary">هولوگرام ندارد</span>
-                                </td>
-                            @endif
+{{--                            @if(\Modules\HologramInterface\Entities\HologramInterface::where('type_id', $bookmark->ad->id)->where('type', 'ad')->first()--}}
+{{--                                                              && \Modules\HologramInterface\Entities\HologramInterface::where('type_id', $bookmark->ad->id)->where('type', 'ad')->first()->status=='approved')--}}
+{{--                                <td width="80" height="40">--}}
+{{--                                    <img src="{{asset(\Modules\HologramInterface\Entities\HologramInterface::where('type_id', $bookmark->ad->id)--}}
+{{--->where('type', 'ad')->first()->hologram->logo)}}" style="width: 100%; height: 50px">--}}
+{{--                                </td>--}}
+{{--                            @else--}}
+{{--                                <td>--}}
+{{--                                    <span class="badge badge-secondary">هولوگرام ندارد</span>--}}
+{{--                                </td>--}}
+{{--                            @endif--}}
                             <td class="project-actions text-right">
 
                                 <a class="btn btn-primary btn-sm"

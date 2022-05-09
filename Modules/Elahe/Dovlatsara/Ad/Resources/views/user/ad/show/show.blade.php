@@ -844,7 +844,7 @@
                     {{--    </span>--}}
                     {{--</div>`;--}}
                     {{--                                        @isset($ad->mobile)--}}
-                    str = `{{$ad->mobile}}`;
+                    str = '{{$ad_phone_number}}';
                 $('#mobileNumber').empty();
                 $('#mobileNumber').append(str);
             });

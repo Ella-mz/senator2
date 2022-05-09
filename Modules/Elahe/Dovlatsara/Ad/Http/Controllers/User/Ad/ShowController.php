@@ -73,11 +73,12 @@ class ShowController extends Controller
         $mapCenter=[];
         if (isset($latitude) && isset($longitude))
             $mapCenter = [(float)$latitude, (float)$longitude];
+        $ad_phone_number = $this->settingRepository->getSettingByTitle('general_phone_number_of_ads')->str_value;
 
         $advertisement_ids = $this->advertisingRepository->advertisingFindByPage('AdDetailPage');
         $advertisement = $this->advertisingApplicationRepository->advertisingFindByAdvertisementIds($advertisement_ids);
         return view('Ads::user.ad.show.show', compact('ad', 'similarAds', 'latitude', 'longitude',
-            'advertisement', 'adsOfUser', 'mapCenter', 'sdk_key', 'api_key', 'user'));
+            'advertisement', 'adsOfUser', 'mapCenter', 'sdk_key', 'api_key', 'user', 'ad_phone_number'));
     }
 
     public function myAds()

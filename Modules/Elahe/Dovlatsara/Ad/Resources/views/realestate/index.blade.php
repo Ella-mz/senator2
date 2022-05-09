@@ -36,17 +36,17 @@
                         {{--                            <th>ثبت شده توسط</th>--}}
                         {{--                        @endif--}}
                         <th>وضعیت</th>
-                        <th>پنل نمایش</th>
-                        <th>هولوگرام</th>
-                        <th style="white-space: normal;">وضعیت پرداخت</th>
-                        @can('RequestToAgencyStatusInPanel')
-                            <th style="white-space: normal;">
-                                وضعیت درخواست به کسب و کار
-                            </th>
-                        @endcan
+{{--                        <th>پنل نمایش</th>--}}
+{{--                        <th>هولوگرام</th>--}}
+{{--                        <th style="white-space: normal;">وضعیت پرداخت</th>--}}
+{{--                        @can('RequestToAgencyStatusInPanel')--}}
+{{--                            <th style="white-space: normal;">--}}
+{{--                                وضعیت درخواست به کسب و کار--}}
+{{--                            </th>--}}
+{{--                        @endcan--}}
 
-                        <th>انتقال به آژانس</th>
-                        <th style="white-space: normal;">هولوگرام/مشاهده/ویرایش/حذف</th>
+{{--                        <th>انتقال به آژانس</th>--}}
+                        <th style="white-space: normal;">مشاهده/ویرایش/حذف</th>
                     </tr>
                     </thead>
                     <tbody>
@@ -87,100 +87,100 @@
                                     حذف توسط کاربر
                                 @endif
                             </td>
-                            <td>
-                                @if(!(isset($ad->agency_id) && $ad->request_to_agency=='approved' && auth()->id()==$ad->user_id))
+{{--                            <td>--}}
+{{--                                @if(!(isset($ad->agency_id) && $ad->request_to_agency=='approved' && auth()->id()==$ad->user_id))--}}
 
-                                    <select class="form-control-sm form-control userStatusInRealestate123"
-                                            style="width: 150px" id="{{$ad->id}}">
-                                        <option value="'active" @if($ad->userStatus=='active') selected @endif>
-                                            نمایش در تمامی صفحات
-                                        </option>
-                                        <option value="onlyEstatePanel"
-                                                @if($ad->userStatus=='onlyEstatePanel') selected @endif>
-                                            فقط نمایش در صفحه مشاور کسب و کار
-                                        </option>
-                                        <option value="inactive" @if($ad->userStatus=='inactive') selected @endif>
-                                            غیرفعال
-                                        </option>
-                                    </select>
-                                @endif
-                                {{--                                <input type="number" class="form-control-sm form-control w-25 orderInput"--}}
-                                {{--                                       id="{{$groupAttr->id}}"--}}
-                                {{--                                       value="{{$groupAttr->order}}">--}}
-                            </td>
-                            @if(\Modules\HologramInterface\Entities\HologramInterface::where('type_id', $ad->id)->where('type', 'ad')->first()
-                                                              && \Modules\HologramInterface\Entities\HologramInterface::where('type_id', $ad->id)->where('type', 'ad')->first()->status=='approved')
-                                <td width="80" height="40">
-                                    <img src="{{asset(\Modules\HologramInterface\Entities\HologramInterface::where('type_id', $ad->id)
-->where('type', 'ad')->first()->hologram->logo)}}" style="width: 100%; height: 50px">
-                                </td>
-                            @else
-                                <td>
-                                    <span class="badge badge-secondary">هولوگرام ندارد</span>
-                                </td>
-                            @endif
-                            <td style="white-space: normal;">
-                                @if($ad->isPaid=='paid')
-                                    پرداخت شده
-                                    @if($ad->paymentType=='membership')
-                                        با حق عضویت
-                                    @endif
-                                @elseif($ad->isPaid=='unpaid')
-                                    <a class="btn btn-sm" style="background-color: #3c3cce;color: #fff"
-                                       href="{{route('adFeeList.realestate', $ad->id)}}">
-                                        پرداخت
-                                    </a>
-                                    {{--                                    پرداخت نشده--}}
-                                @endif
+{{--                                    <select class="form-control-sm form-control userStatusInRealestate123"--}}
+{{--                                            style="width: 150px" id="{{$ad->id}}">--}}
+{{--                                        <option value="'active" @if($ad->userStatus=='active') selected @endif>--}}
+{{--                                            نمایش در تمامی صفحات--}}
+{{--                                        </option>--}}
+{{--                                        <option value="onlyEstatePanel"--}}
+{{--                                                @if($ad->userStatus=='onlyEstatePanel') selected @endif>--}}
+{{--                                            فقط نمایش در صفحه مشاور کسب و کار--}}
+{{--                                        </option>--}}
+{{--                                        <option value="inactive" @if($ad->userStatus=='inactive') selected @endif>--}}
+{{--                                            غیرفعال--}}
+{{--                                        </option>--}}
+{{--                                    </select>--}}
+{{--                                @endif--}}
+{{--                                --}}{{--                                <input type="number" class="form-control-sm form-control w-25 orderInput"--}}
+{{--                                --}}{{--                                       id="{{$groupAttr->id}}"--}}
+{{--                                --}}{{--                                       value="{{$groupAttr->order}}">--}}
+{{--                            </td>--}}
+{{--                            @if(\Modules\HologramInterface\Entities\HologramInterface::where('type_id', $ad->id)->where('type', 'ad')->first()--}}
+{{--                                                              && \Modules\HologramInterface\Entities\HologramInterface::where('type_id', $ad->id)->where('type', 'ad')->first()->status=='approved')--}}
+{{--                                <td width="80" height="40">--}}
+{{--                                    <img src="{{asset(\Modules\HologramInterface\Entities\HologramInterface::where('type_id', $ad->id)--}}
+{{--->where('type', 'ad')->first()->hologram->logo)}}" style="width: 100%; height: 50px">--}}
+{{--                                </td>--}}
+{{--                            @else--}}
+{{--                                <td>--}}
+{{--                                    <span class="badge badge-secondary">هولوگرام ندارد</span>--}}
+{{--                                </td>--}}
+{{--                            @endif--}}
+{{--                            <td style="white-space: normal;">--}}
+{{--                                @if($ad->isPaid=='paid')--}}
+{{--                                    پرداخت شده--}}
+{{--                                    @if($ad->paymentType=='membership')--}}
+{{--                                        با حق عضویت--}}
+{{--                                    @endif--}}
+{{--                                @elseif($ad->isPaid=='unpaid')--}}
+{{--                                    <a class="btn btn-sm" style="background-color: #3c3cce;color: #fff"--}}
+{{--                                       href="{{route('adFeeList.realestate', $ad->id)}}">--}}
+{{--                                        پرداخت--}}
+{{--                                    </a>--}}
+{{--                                    --}}{{--                                    پرداخت نشده--}}
+{{--                                @endif--}}
 
-                            </td>
-                            @can('RequestToAgencyStatusInPanel')
-                                <td>
-                                    @if($ad->request_to_agency=='noRequest')
-                                        درخواستی نفرستاده اید
-                                    @elseif($ad->request_to_agency=='pending')
-                                        در انتظار تایید مدیر کسب و کار
-                                    @elseif($ad->request_to_agency=='approved')
-                                        تایید شده توسط کسب و کار
-                                    @elseif($ad->request_to_agency=='disapproved')
-                                        عدم تایید توسط کسب و کار
-                                    @endif
-                                </td>
-                            @endcan
-                            {{--                            @if($type!='my-ads')--}}
-                            <td>
-                                @if(isset($ad->agency_id) && auth()->user()->hasRole('real-state-administrator'))
-                                    <a class="btn btn-sm" style="background-color: #3c3cce;color: #fff"
-                                       href="{{route('ad.transfer.panel', ['adId'=>$ad->id, 'destination'=>'quitAgency'])}}">
-                                        خروج از
-                                        {{$user->hasRole('real-state-agent')?$user->agency->shop_title:$user->shop_title}}
-                                    </a>
-                                @elseif(($user->id == $ad->user_id)  && !isset($ad->agency_id) && !auth()->user()->hasRole('ordinary-user'))
-                                    <a class="btn btn-sm" style="background-color: #3c3cce;color: #fff"
-                                       href="{{route('ad.transfer.panel', ['adId'=>$ad->id, 'destination'=>'toAgency'])}}">
-                                        انتقال
-                                        به {{$user->hasRole('real-state-agent')?$user->agency->shop_title:$user->shop_title}}
-                                    </a>
-                                @elseif(($user->id == $ad->user_id)  && isset($ad->agency_id))
-                                    انتقال یافته
-                                    به{{$user->hasRole('real-state-agent')?$user->agency->shop_title:$user->shop_title}}
-                                @else
-                                    <span class="badge badge-info">غیر قابل انتقال</span>
-                                @endif
-                                {{--    <a class="btn btn-sm" style="background-color: #3c3cce;color: #fff"
-                                       href="{{route('ad.transfer.panel', ['adId'=>$ad->id, 'destination'=>isset($ad->agency_id)?'quitAgency':'toAgency'])}}">
-                                        @if(isset($ad->agency_id)) خروج از@else انتقال
-                                        به @endif {{$user->hasRole('real-state-agent')?$user->agency->shop_title:$user->shop_title}}
-                                    </a>--}}
-                            </td>
+{{--                            </td>--}}
+{{--                            @can('RequestToAgencyStatusInPanel')--}}
+{{--                                <td>--}}
+{{--                                    @if($ad->request_to_agency=='noRequest')--}}
+{{--                                        درخواستی نفرستاده اید--}}
+{{--                                    @elseif($ad->request_to_agency=='pending')--}}
+{{--                                        در انتظار تایید مدیر کسب و کار--}}
+{{--                                    @elseif($ad->request_to_agency=='approved')--}}
+{{--                                        تایید شده توسط کسب و کار--}}
+{{--                                    @elseif($ad->request_to_agency=='disapproved')--}}
+{{--                                        عدم تایید توسط کسب و کار--}}
+{{--                                    @endif--}}
+{{--                                </td>--}}
+{{--                            @endcan--}}
+{{--                            --}}{{--                            @if($type!='my-ads')--}}
+{{--                            <td>--}}
+{{--                                @if(isset($ad->agency_id) && auth()->user()->hasRole('real-state-administrator'))--}}
+{{--                                    <a class="btn btn-sm" style="background-color: #3c3cce;color: #fff"--}}
+{{--                                       href="{{route('ad.transfer.panel', ['adId'=>$ad->id, 'destination'=>'quitAgency'])}}">--}}
+{{--                                        خروج از--}}
+{{--                                        {{$user->hasRole('real-state-agent')?$user->agency->shop_title:$user->shop_title}}--}}
+{{--                                    </a>--}}
+{{--                                @elseif(($user->id == $ad->user_id)  && !isset($ad->agency_id) && !auth()->user()->hasRole('ordinary-user'))--}}
+{{--                                    <a class="btn btn-sm" style="background-color: #3c3cce;color: #fff"--}}
+{{--                                       href="{{route('ad.transfer.panel', ['adId'=>$ad->id, 'destination'=>'toAgency'])}}">--}}
+{{--                                        انتقال--}}
+{{--                                        به {{$user->hasRole('real-state-agent')?$user->agency->shop_title:$user->shop_title}}--}}
+{{--                                    </a>--}}
+{{--                                @elseif(($user->id == $ad->user_id)  && isset($ad->agency_id))--}}
+{{--                                    انتقال یافته--}}
+{{--                                    به{{$user->hasRole('real-state-agent')?$user->agency->shop_title:$user->shop_title}}--}}
+{{--                                @else--}}
+{{--                                    <span class="badge badge-info">غیر قابل انتقال</span>--}}
+{{--                                @endif--}}
+{{--                                --}}{{--    <a class="btn btn-sm" style="background-color: #3c3cce;color: #fff"--}}
+{{--                                       href="{{route('ad.transfer.panel', ['adId'=>$ad->id, 'destination'=>isset($ad->agency_id)?'quitAgency':'toAgency'])}}">--}}
+{{--                                        @if(isset($ad->agency_id)) خروج از@else انتقال--}}
+{{--                                        به @endif {{$user->hasRole('real-state-agent')?$user->agency->shop_title:$user->shop_title}}--}}
+{{--                                    </a>--}}
+{{--                            </td>--}}
                             {{--                            @endif--}}
                             <td class="project-actions text-right">
                                 <form action="{{route('ad.destroy.supplier.realestate', $ad->id)}}" method="POST">
                                     @csrf
-                                    <a class="btn btn-sm" style="background-color: #3c3cce;color: #fff"
-                                       href="{{route('hologram.index.realestate', ['type'=>'ad', 'id'=>$ad->id])}}">
-                                        <i class="fa fa-plus"></i>
-                                    </a>
+{{--                                    <a class="btn btn-sm" style="background-color: #3c3cce;color: #fff"--}}
+{{--                                       href="{{route('hologram.index.realestate', ['type'=>'ad', 'id'=>$ad->id])}}">--}}
+{{--                                        <i class="fa fa-plus"></i>--}}
+{{--                                    </a>--}}
                                     <a class="btn btn-primary btn-sm"
                                        href="{{route('ad.show.supplier.realestate', $ad->id)}}">
                                         <i class="fa fa-list"></i>

@@ -37,19 +37,14 @@ class UserController extends Controller
      */
     public function profile(User $user)
     {
-        $agentRole = Role::where('slug', 'real-state-agent')->first();
-        $agent_ids = DB::table('role_user')
-            ->where('role_id', $agentRole->id)->pluck('user_id')->toArray();
-        $realStateAgents = User::whereIn('id', $agent_ids)->get();
         $skills = $user->associationSkills;
         $skills2 = AssociationSkill::all();
-        $levelupToAdminOfAgency = $this->settingRepository->getSettingByTitle('levelupToAdminOfAgency');
         if ($user->congrats_check) {
             $user->update(['congrats_check' => 0]);
             \alert()->success('', 'ارتقا اکانت شما به مدیر کسب و کار را تبریک میگوییم.');
         }
-        return view('Users::realestate.profile2', compact('user', 'realStateAgents', 'skills',
-            'skills2', 'levelupToAdminOfAgency'));
+        return view('Users::realestate.profile2', compact('user', 'skills',
+            'skills2'));
     }
 
     /**

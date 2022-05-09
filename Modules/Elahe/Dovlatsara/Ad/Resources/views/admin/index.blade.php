@@ -176,8 +176,8 @@
                         <th>نوع آگهی</th>
                         <th>ثبت شده توسط</th>
                         <th>وضعیت</th>
-                        <th>وضعیت پرداخت</th>
-                        <th>هولوگرام</th>
+{{--                        <th>وضعیت پرداخت</th>--}}
+{{--                        <th>هولوگرام</th>--}}
                         <th>مشاهده/ویرایش/حذف</th>
                     </tr>
                     </thead>
@@ -227,25 +227,25 @@
                                 @endif
 
                             </td>
-                            <td>
-                                @if($ad->isPaid=='paid')
-                                    پرداخت شده
-                                @elseif($ad->isPaid=='unpaid')
-                                    <span class="badge badge-danger"> پرداخت نشده</span>
-                                @endif
+{{--                            <td>--}}
+{{--                                @if($ad->isPaid=='paid')--}}
+{{--                                    پرداخت شده--}}
+{{--                                @elseif($ad->isPaid=='unpaid')--}}
+{{--                                    <span class="badge badge-danger"> پرداخت نشده</span>--}}
+{{--                                @endif--}}
 
-                            </td>
-                            @if(\Modules\HologramInterface\Entities\HologramInterface::where('type_id', $ad->id)->where('type', 'ad')->first()
-                                                          && \Modules\HologramInterface\Entities\HologramInterface::where('type_id', $ad->id)->where('type', 'ad')->first()->status=='approved')
-                                <td width="80" height="40">
-                                    <img src="{{asset(\Modules\HologramInterface\Entities\HologramInterface::where('type_id', $ad->id)
-->where('type', 'ad')->first()->hologram->logo)}}" style="width: 100%; height: 50px">
-                                </td>
-                            @else
-                                <td>
-                                    <span class="badge badge-info">هولوگرام ندارد</span>
-                                </td>
-                            @endif
+{{--                            </td>--}}
+{{--                            @if(\Modules\HologramInterface\Entities\HologramInterface::where('type_id', $ad->id)->where('type', 'ad')->first()--}}
+{{--                                                          && \Modules\HologramInterface\Entities\HologramInterface::where('type_id', $ad->id)->where('type', 'ad')->first()->status=='approved')--}}
+{{--                                <td width="80" height="40">--}}
+{{--                                    <img src="{{asset(\Modules\HologramInterface\Entities\HologramInterface::where('type_id', $ad->id)--}}
+{{--->where('type', 'ad')->first()->hologram->logo)}}" style="width: 100%; height: 50px">--}}
+{{--                                </td>--}}
+{{--                            @else--}}
+{{--                                <td>--}}
+{{--                                    <span class="badge badge-info">هولوگرام ندارد</span>--}}
+{{--                                </td>--}}
+{{--                            @endif--}}
                             <td class="project-actions text-right">
                                 <form action="{{route('ad.destroy.supplier.admin', $ad->id)}}" method="POST">
                                     @csrf

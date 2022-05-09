@@ -200,35 +200,44 @@
             @if(isset(\Modules\Setting\Entities\Setting::where('title', 'phone_number_of_header')->first()->str_value))
 
                 <a href="tel:{{(\Modules\Setting\Entities\Setting::where('title', 'phone_number_of_header')->first()->str_value)}}"
-                   class="dolatsara__phone">
+                   class="dolatsara__phone ">
                     <strong>{{(\Modules\Setting\Entities\Setting::where('title', 'phone_number_of_header')->first()->str_value)}}</strong>
                     <small>-021</small>
                 </a>
             @endif
-{{--            <a class="dolatsara__log-button" href="{{route('auth.loginForm.user')}}" style="cursor: pointer">--}}
-{{--                ورود--}}
-{{--            </a>--}}
-{{--            <a class="dolatsara__submit-ad-button" href="{{route('categories.find.cats', ['type'=>'supplier', 'panel'=>'user'])}}" style="cursor: pointer">--}}
-{{--                ثبت آگهی--}}
-{{--            </a>--}}
+            @if(auth()->check())
+                <form action="{{route('auth.user.logout.user')}}" id="logoutID" method="post">
+                    @csrf
+                    <a class="dolatsara__log-button" onclick="document.getElementById('logoutID').submit()"
+                       style="cursor: pointer">
+                        خروج</a>
+                </form>
+            @else
+            <a class="dolatsara__log-button" href="{{route('auth.loginForm.user')}}" style="cursor: pointer">
+                ورود
+            </a>
+            @endif
+            <a class="dolatsara__submit-ad-button" href="{{route('categories.find.cats', ['type'=>'supplier', 'panel'=>'user'])}}" style="cursor: pointer">
+                ثبت آگهی
+            </a>
 
-            <div class="dropdown dolatsara__setting-list">
-                <button type="button" class="dolatsara__setting-button" data-bs-toggle="dropdown"
-                        @if($widgets->count()<=0) disabled @endif>
-                    <img src="{{asset('files/userMaster/src/images/icons8-settings-50 (1).png')}}" alt="dolatsara__setting"/>
-                </button>
-                <ul class="dropdown-menu dolatsara__setting-list-icons">
-                    <div class="row">
-                        @foreach($widgets as $widget)
-                            <li>
-                                <a class="dropdown-item" href="{{$widget->link}}" target="_blank">
-                                    <img src="{{asset($widget->image)}}">{{$widget->title}}
-                                </a>
-                            </li>
-                        @endforeach
-                    </div>
-                </ul>
-            </div>
+{{--            <div class="dropdown dolatsara__setting-list">--}}
+{{--                <button type="button" class="dolatsara__setting-button" data-bs-toggle="dropdown"--}}
+{{--                        @if($widgets->count()<=0) disabled @endif>--}}
+{{--                    <img src="{{asset('files/userMaster/src/images/icons8-settings-50 (1).png')}}" alt="dolatsara__setting"/>--}}
+{{--                </button>--}}
+{{--                <ul class="dropdown-menu dolatsara__setting-list-icons">--}}
+{{--                    <div class="row">--}}
+{{--                        @foreach($widgets as $widget)--}}
+{{--                            <li>--}}
+{{--                                <a class="dropdown-item" href="{{$widget->link}}" target="_blank">--}}
+{{--                                    <img src="{{asset($widget->image)}}">{{$widget->title}}--}}
+{{--                                </a>--}}
+{{--                            </li>--}}
+{{--                        @endforeach--}}
+{{--                    </div>--}}
+{{--                </ul>--}}
+{{--            </div>--}}
 
         </div>
     </div>

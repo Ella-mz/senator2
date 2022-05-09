@@ -653,24 +653,24 @@
                                                 <textarea name="description"
                                                           placeholder="توضیحات تکمیلی شما برای بازدیدکنندگان نمایش میگردد، بنابراین هرچه جزییات بیشتری را درج کنید، شانس دیده شدن را افزایش می دهد">{{old('description')}}</textarea>
                                             </div>
-                                            @if(\Illuminate\Support\Facades\Auth::user()->hasRole('ordinary-user'))
-                                                <div class="checkbox-place">
-                                                    <input
-                                                        class="form-check-input simple-checkbox"
-                                                        type="checkbox"
-                                                        name="request_to_agency"
-                                                        @if(old('request_to_agency') == 'on') checked
-                                                        @endif
-                                                        id="request_to_agency"
-                                                        style="margin-right: unset;margin-left: 4px; position: unset"
-                                                    >
-                                                    <label class="form-check-label"
-                                                           for="request_to_agency"
-                                                           style="outline: none;">
-                                                        آگهی خود را به یک کسب و کار واگذار می کنید؟
-                                                    </label>
-                                                </div>
-                                            @endif
+{{--                                            @if(\Illuminate\Support\Facades\Auth::user()->hasRole('ordinary-user'))--}}
+{{--                                                <div class="checkbox-place">--}}
+{{--                                                    <input--}}
+{{--                                                        class="form-check-input simple-checkbox"--}}
+{{--                                                        type="checkbox"--}}
+{{--                                                        name="request_to_agency"--}}
+{{--                                                        @if(old('request_to_agency') == 'on') checked--}}
+{{--                                                        @endif--}}
+{{--                                                        id="request_to_agency"--}}
+{{--                                                        style="margin-right: unset;margin-left: 4px; position: unset"--}}
+{{--                                                    >--}}
+{{--                                                    <label class="form-check-label"--}}
+{{--                                                           for="request_to_agency"--}}
+{{--                                                           style="outline: none;">--}}
+{{--                                                        آگهی خود را به یک کسب و کار واگذار می کنید؟--}}
+{{--                                                    </label>--}}
+{{--                                                </div>--}}
+{{--                                            @endif--}}
                                             <div class="agahi-price-box" id="paymentCards">
                                                 {!! $content !!}
 

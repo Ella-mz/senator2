@@ -76,7 +76,9 @@ trait StoreSupplierAdTrait
     public function storeAdWithAttrsAndImages($request, $category)
     {
         $typeOfWatermark = $this->adminSettingRepository->getAdminSettingByTitle('ads_type_of_watermark')->value;
-        $watermark = $this->settingRepository->getSettingByTitle('watermark_for_ads')->str_value;
+        $watermark = '';
+        if ($this->settingRepository->getSettingByTitle('watermark_for_ads'))
+            $watermark = $this->settingRepository->getSettingByTitle('watermark_for_ads')->str_value;
         $ad = Ad::create([
             'user_id' => \auth()->id(),
             'category_id' => $category->id,
@@ -98,7 +100,7 @@ trait StoreSupplierAdTrait
             'created_user' => \auth()->id(),
             'request_to_agency' => isset($request['request_to_agency']) ? 'pending' : 'noRequest',
             'dedicated_type' => isset($request['request_to_agency']) ? 'agency_to_user' : null,
-            'text_watermark_color' => isset($request['color'])?$request['color']:null
+            'text_watermark_color' => isset($request['color']) ? $request['color'] : null
         ]);
         $uniqueCode = $ad->id + 100;
         $ad->update(['uniqueCodeOfAd' => $uniqueCode,]);
@@ -114,7 +116,7 @@ trait StoreSupplierAdTrait
             $ad->update([
                 'agency_id' => \auth()->user()->real_estate_admin_id
             ]);
-        elseif (isset($request['agency_id']) && $request['agency_id']!='undefined')
+        elseif (isset($request['agency_id']) && $request['agency_id'] != 'undefined')
             $ad->update([
                 'agency_id' => $request['agency_id'],
                 'request_to_agency' => 'pending',
@@ -144,7 +146,7 @@ trait StoreSupplierAdTrait
                     } else {
                         if ($typeOfWatermark == 'ImageAndText') {
                             $im = $this->uploadFileWithImageAndTextWatermark($image, 'public/upload/adImages/' . now()->year
-                                . '/' . now()->month . '/' . $ad->id, $watermark, $text, $request['color']??null);
+                                . '/' . now()->month . '/' . $ad->id, $watermark, $text, $request['color'] ?? null);
                         } elseif ($typeOfWatermark == 'Image') {
                             $im = $this->uploadFileWithImageWatermark($image, 'public/upload/adImages/' . now()->year
                                 . '/' . now()->month . '/' . $ad->id, $watermark);
@@ -280,7 +282,7 @@ trait StoreSupplierAdTrait
                 }
             }
         }
-            if (isset($request->adVideo)) {
+        if (isset($request->adVideo)) {
             $im = $this->uploadFile($request->adVideo, 'public/upload/adVideos/' . now()->year
                 . '/' . now()->month . '/' . $ad->id);
             AdVideo::create([

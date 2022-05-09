@@ -111,10 +111,10 @@
 
                                         <div class="productShow-desc-price">
                                             @if(isset($ad->attributes->where('isSignificant', 1)->where('attribute_type', 'int')->first()->pivot->value))
-                                                {{number_format($ad->attributes->where('isSignificant', 1)->where('attribute_type', 'int')->first()->pivot->value)}} {{($ad->attributes->where('isSignificant', 1)->where('attribute_type', 'int')->first()->unit)}}
+                                                <p>{{number_format($ad->attributes->where('isSignificant', 1)->where('attribute_type', 'int')->first()->pivot->value)}} {{($ad->attributes->where('isSignificant', 1)->where('attribute_type', 'int')->first()->unit)}}</p>
                                             @else
                                                 {{\Modules\Attribute\Entities\Attribute::find($ad->attributes->where('isSignificant', 1)->where('attribute_type', 'int')->first()->id)->alt_value}}
-                                                غالذ            @endif
+                                                            @endif
                                             {{--                                            {{number_format($ad->attributes->where('isSignificant', 1)->where('attribute_type', 'int')->first()->pivot->value)}}--}}
 
                                             {{--                                            {{($ad->attributes->where('isSignificant', 1)->where('attribute_type', 'int')->first()->unit)}}--}}
@@ -141,11 +141,11 @@
                                         @endif
                                     </div>
                                     <div class="agahi-btn-text d-flex justify-content-between px-2 my-2 ">
-                                        @if($ad->isPaid == 'unpaid')
-                                            <div class="green-bg mx-1 ">
-                                                <a href="{{route('adFeeList.user', $ad->id)}}" class=" ">پرداخت</a>
-                                            </div>
-                                        @endif
+{{--                                        @if($ad->isPaid == 'unpaid')--}}
+{{--                                            <div class="green-bg mx-1 ">--}}
+{{--                                                <a href="{{route('adFeeList.user', $ad->id)}}" class=" ">پرداخت</a>--}}
+{{--                                            </div>--}}
+{{--                                        @endif--}}
                                         @if(!(isset($ad->agency_id) && $ad->request_to_agency=='approved'))
                                             @if($ad->userStatus == 'active')
                                                 <div class="edit mx-1">

@@ -624,7 +624,7 @@
                                                     </label>
                                                 </div>
                                                 <i class="imgAdd d-flex justify-content-center align-content-center">
-                                                    <i class="fa fa-plus imgAdd p-2 text-dark"></i>
+                                                    <p style="font-weight: 900;font-size: 1.5rem;margin-top: 2px;color: #2a2929">+</p>
                                                 </i>
                                             </div>
                                             <div class="col-md-10 mb-3">
@@ -670,34 +670,34 @@
                                                 <textarea name="description"
                                                           placeholder="توضیحات تکمیلی شما برای بازدیدکنندگان نمایش میگردد، بنابراین هرچه جزییات بیشتری را درج کنید، شانس دیده شدن را افزایش می دهد">{{old('description')??(($inputSession&&($category->id==$inputSession['category_id']))?$inputSession['description']:null)}}</textarea>
                                             </div>
-                                            @if(auth()->check())
-                                                @if(auth()->user()->hasRole('ordinary-user') )
-                                                    <div class="checkbox-place text">
-                                                        <input class="form-check-input simple-checkbox" type="checkbox"
-                                                               name="request_to_agency"
-                                                               @if(old('request_to_agency') == 'on'||($inputSession&&($category->id==$inputSession['category_id'])&&isset($inputSession['request_to_agency']))) checked
-                                                               @endif
-                                                               id="request_to_agency">
-                                                        <label class="form-check-label" for="flexCheckDefault"
-                                                               style="outline: none;">
-                                                            آگهی خود را به یک کسب و کار واگذار می کنید؟
-                                                        </label>
-                                                    </div>
-                                                @endif
-                                            @else
-                                                <div class="checkbox-place text">
-                                                    <input class="form-check-input simple-checkbox" type="checkbox"
-                                                           name="request_to_agency"
-                                                           @if(old('request_to_agency') == 'on'||($inputSession&&$category->id==$inputSession['category_id']&&isset($inputSession['request_to_agency']))) checked
-                                                           @endif
-                                                           id="request_to_agency">
-                                                    <label class="form-check-label" for="flexCheckDefault"
-                                                           style="outline: none;">
-                                                        آگهی خود را به یک کسب و کار واگذار می کنید؟
-                                                    </label>
-                                                </div>
+{{--                                            @if(auth()->check())--}}
+{{--                                                @if(auth()->user()->hasRole('ordinary-user') )--}}
+{{--                                                    <div class="checkbox-place text">--}}
+{{--                                                        <input class="form-check-input simple-checkbox" type="checkbox"--}}
+{{--                                                               name="request_to_agency"--}}
+{{--                                                               @if(old('request_to_agency') == 'on'||($inputSession&&($category->id==$inputSession['category_id'])&&isset($inputSession['request_to_agency']))) checked--}}
+{{--                                                               @endif--}}
+{{--                                                               id="request_to_agency">--}}
+{{--                                                        <label class="form-check-label" for="flexCheckDefault"--}}
+{{--                                                               style="outline: none;">--}}
+{{--                                                            آگهی خود را به یک کسب و کار واگذار می کنید؟--}}
+{{--                                                        </label>--}}
+{{--                                                    </div>--}}
+{{--                                                @endif--}}
+{{--                                            @else--}}
+{{--                                                <div class="checkbox-place text">--}}
+{{--                                                    <input class="form-check-input simple-checkbox" type="checkbox"--}}
+{{--                                                           name="request_to_agency"--}}
+{{--                                                           @if(old('request_to_agency') == 'on'||($inputSession&&$category->id==$inputSession['category_id']&&isset($inputSession['request_to_agency']))) checked--}}
+{{--                                                           @endif--}}
+{{--                                                           id="request_to_agency">--}}
+{{--                                                    <label class="form-check-label" for="flexCheckDefault"--}}
+{{--                                                           style="outline: none;">--}}
+{{--                                                        آگهی خود را به یک کسب و کار واگذار می کنید؟--}}
+{{--                                                    </label>--}}
+{{--                                                </div>--}}
 
-                                            @endif
+{{--                                            @endif--}}
                                             <div class="agahi-price-box" id="paymentCards">
                                                 {!! $content !!}
 

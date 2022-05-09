@@ -38,7 +38,7 @@
                         @endif
                         <th>گروه مشخصات</th>
                         {{--                        @if($category->node == 1 )--}}
-                        <th>هزینه</th>
+{{--                        <th>هزینه</th>--}}
                         {{--                        @endif--}}
                         <th>ترتیب</th>
 {{--                        <th>نمایش در صفحه اصلی</th>--}}
@@ -70,20 +70,20 @@
                             <td><a href="{{route('groupAttrs.index.admin', $category->id)}}"
                                    class="btn btn-sm btn-primary"><i class="fa fa-plus-circle nav-icon text-white"></i></a>
                             </td>
-                            @if($category->node == 1 )
+{{--                            @if($category->node == 1 )--}}
 
-                                <td>
-                                    <a href="{{route('advertisingFee.index.admin', $category->id)}}"
-                                       class="btn btn-sm btn-primary"><i class="fa fa-plus-circle nav-icon text-white">
-                                        </i>
-                                    </a>
+{{--                                <td>--}}
+{{--                                    <a href="{{route('advertisingFee.index.admin', $category->id)}}"--}}
+{{--                                       class="btn btn-sm btn-primary"><i class="fa fa-plus-circle nav-icon text-white">--}}
+{{--                                        </i>--}}
+{{--                                    </a>--}}
 
-                                </td>
-                            @else
-                                <td>
-                                    <span class="badge badge-primary">برای زیردسته ها تعریف شود</span>
-                                </td>
-                            @endif
+{{--                                </td>--}}
+{{--                            @else--}}
+{{--                                <td>--}}
+{{--                                    <span class="badge badge-primary">برای زیردسته ها تعریف شود</span>--}}
+{{--                                </td>--}}
+{{--                            @endif--}}
                             <td>
                                 <input type="number" class="form-control-sm form-control w-25 orderInput"
                                        id="{{$category->id}}"

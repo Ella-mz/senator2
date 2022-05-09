@@ -462,68 +462,68 @@
                                 {{--                                    </div>--}}
                                 {{--                                </div>--}}
                                 {{--                            </div>--}}
-                                @if($user->hasRole('real-state-administrator'))
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label for="mobasherCardImage">عکس کارت مباشر</label>
+{{--                                @if($user->hasRole('real-state-administrator'))--}}
+{{--                                    <div class="col-md-6">--}}
+{{--                                        <div class="form-group">--}}
+{{--                                            <label for="mobasherCardImage">عکس کارت مباشر</label>--}}
 
-                                            <input class="form-control filestyle"
-                                                   name="mobasherCardImage"
-                                                   type="file" data-classbutton="btn btn-secondary"
-                                                   data-classinput="form-control inline"
-                                                   data-icon="&lt;span class='fa fa-upload mr-2'&gt;&lt;/span&gt;"
-                                                   value="{{old('mobasherCardImage')}}">
-                                            <small class="text-danger">{{ $errors->first('mobasherCardImage') }}</small>
-                                            <div id="mobasherCardImage" style="margin-top: 2%">
-                                                @if(isset($user->mobasherCardImage))
-                                                    <img src="{{asset($user->mobasherCardImage)}}" width="80">
-                                                    <i class="fa fa-trash"
-                                                       onclick="deleteFiles('{{$user->id}}', 'mobasherCardImage')"></i>
-                                                @endif
-                                            </div>
-                                        </div>
-                                    </div>
-                                    {{--                            <div class="col-md-6">--}}
-                                    {{--                                <div class="form-group">--}}
-                                    {{--                                    <label for="unionCardImage">عکس کارت اتحادیه</label>--}}
+{{--                                            <input class="form-control filestyle"--}}
+{{--                                                   name="mobasherCardImage"--}}
+{{--                                                   type="file" data-classbutton="btn btn-secondary"--}}
+{{--                                                   data-classinput="form-control inline"--}}
+{{--                                                   data-icon="&lt;span class='fa fa-upload mr-2'&gt;&lt;/span&gt;"--}}
+{{--                                                   value="{{old('mobasherCardImage')}}">--}}
+{{--                                            <small class="text-danger">{{ $errors->first('mobasherCardImage') }}</small>--}}
+{{--                                            <div id="mobasherCardImage" style="margin-top: 2%">--}}
+{{--                                                @if(isset($user->mobasherCardImage))--}}
+{{--                                                    <img src="{{asset($user->mobasherCardImage)}}" width="80">--}}
+{{--                                                    <i class="fa fa-trash"--}}
+{{--                                                       onclick="deleteFiles('{{$user->id}}', 'mobasherCardImage')"></i>--}}
+{{--                                                @endif--}}
+{{--                                            </div>--}}
+{{--                                        </div>--}}
+{{--                                    </div>--}}
+{{--                                    --}}{{--                            <div class="col-md-6">--}}
+{{--                                    --}}{{--                                <div class="form-group">--}}
+{{--                                    --}}{{--                                    <label for="unionCardImage">عکس کارت اتحادیه</label>--}}
 
-                                    {{--                                    <input class="form-control filestyle"--}}
-                                    {{--                                           name="unionCardImage"--}}
-                                    {{--                                           type="file" data-classbutton="btn btn-secondary"--}}
-                                    {{--                                           data-classinput="form-control inline"--}}
-                                    {{--                                           data-icon="&lt;span class='fa fa-upload mr-2'&gt;&lt;/span&gt;"--}}
-                                    {{--                                           value="{{old('unionCardImage')}}">--}}
-                                    {{--                                    <small class="text-danger">{{ $errors->first('unionCardImage') }}</small>--}}
-                                    {{--                                    <div id="unionCardImage" style="margin-top: 2%">--}}
-                                    {{--                                        @if(isset($user->unionCardImage))--}}
-                                    {{--                                            <img src="{{asset($user->unionCardImage)}}" width="80">--}}
-                                    {{--                                            <i class="fa fa-trash" onclick="deleteFiles('{{$user->id}}', 'unionCardImage')"></i>--}}
-                                    {{--                                        @endif--}}
-                                    {{--                                    </div>--}}
-                                    {{--                                </div>--}}
-                                    {{--                            </div>--}}
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label for="businessLicenseImage">عکس پروانه کسب</label>
+{{--                                    --}}{{--                                    <input class="form-control filestyle"--}}
+{{--                                    --}}{{--                                           name="unionCardImage"--}}
+{{--                                    --}}{{--                                           type="file" data-classbutton="btn btn-secondary"--}}
+{{--                                    --}}{{--                                           data-classinput="form-control inline"--}}
+{{--                                    --}}{{--                                           data-icon="&lt;span class='fa fa-upload mr-2'&gt;&lt;/span&gt;"--}}
+{{--                                    --}}{{--                                           value="{{old('unionCardImage')}}">--}}
+{{--                                    --}}{{--                                    <small class="text-danger">{{ $errors->first('unionCardImage') }}</small>--}}
+{{--                                    --}}{{--                                    <div id="unionCardImage" style="margin-top: 2%">--}}
+{{--                                    --}}{{--                                        @if(isset($user->unionCardImage))--}}
+{{--                                    --}}{{--                                            <img src="{{asset($user->unionCardImage)}}" width="80">--}}
+{{--                                    --}}{{--                                            <i class="fa fa-trash" onclick="deleteFiles('{{$user->id}}', 'unionCardImage')"></i>--}}
+{{--                                    --}}{{--                                        @endif--}}
+{{--                                    --}}{{--                                    </div>--}}
+{{--                                    --}}{{--                                </div>--}}
+{{--                                    --}}{{--                            </div>--}}
+{{--                                    <div class="col-md-6">--}}
+{{--                                        <div class="form-group">--}}
+{{--                                            <label for="businessLicenseImage">عکس پروانه کسب</label>--}}
 
-                                            <input class="form-control filestyle"
-                                                   name="businessLicenseImage"
-                                                   type="file" data-classbutton="btn btn-secondary"
-                                                   data-classinput="form-control inline"
-                                                   data-icon="&lt;span class='fa fa-upload mr-2'&gt;&lt;/span&gt;"
-                                                   value="{{old('businessLicenseImage')}}">
-                                            <small
-                                                class="text-danger">{{ $errors->first('businessLicenseImage') }}</small>
-                                            <div id="businessLicenseImage" style="margin-top: 2%">
-                                                @if(isset($user->businessLicenseImage))
-                                                    <img src="{{asset($user->businessLicenseImage)}}" width="80">
-                                                    <i class="fa fa-trash"
-                                                       onclick="deleteFiles('{{$user->id}}', 'businessLicenseImage')"></i>
-                                                @endif
-                                            </div>
-                                        </div>
-                                    </div>
-                            @endif
+{{--                                            <input class="form-control filestyle"--}}
+{{--                                                   name="businessLicenseImage"--}}
+{{--                                                   type="file" data-classbutton="btn btn-secondary"--}}
+{{--                                                   data-classinput="form-control inline"--}}
+{{--                                                   data-icon="&lt;span class='fa fa-upload mr-2'&gt;&lt;/span&gt;"--}}
+{{--                                                   value="{{old('businessLicenseImage')}}">--}}
+{{--                                            <small--}}
+{{--                                                class="text-danger">{{ $errors->first('businessLicenseImage') }}</small>--}}
+{{--                                            <div id="businessLicenseImage" style="margin-top: 2%">--}}
+{{--                                                @if(isset($user->businessLicenseImage))--}}
+{{--                                                    <img src="{{asset($user->businessLicenseImage)}}" width="80">--}}
+{{--                                                    <i class="fa fa-trash"--}}
+{{--                                                       onclick="deleteFiles('{{$user->id}}', 'businessLicenseImage')"></i>--}}
+{{--                                                @endif--}}
+{{--                                            </div>--}}
+{{--                                        </div>--}}
+{{--                                    </div>--}}
+{{--                            @endif--}}
                             </div>
 
                         </div>

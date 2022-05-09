@@ -49,18 +49,18 @@ where('title', 'logo_of_site')->first()->str_value)}}" alt="AdminLTE Logo" class
                 </div>
                 <div class="info ">
                     <a class="d-block">
-                        <span style="color: #fff">{{auth()->user()->roles->first()->name}}</span>
+                        <span style="color: #2a2929">{{auth()->user()->roles->first()->name}}</span>
                     </a>
                 </div>
                 <div class="info ">
                     <a class="d-block temp-white-text"><span
-                            style="color: #fff">{{auth()->user()->name}} {{auth()->user()->sirName}}</span></a>
+                            style="color: #2a2929">{{auth()->user()->name}} {{auth()->user()->sirName}}</span></a>
                 </div>
             </div>
             <div class="user-panel pb-3 mb-3 d-flex flexBox-center-col ">
                 <div class="info ">
                     <a class="d-block temp-white-text"><span
-                            style="color: #fff">کد معرف: {{auth()->user()->invitedCode}}</span></a>
+                            style="color: #2a2929">کد معرف: {{auth()->user()->invitedCode}}</span></a>
                 </div>
             </div>
             <hr style="background-color: #fff">
@@ -182,17 +182,17 @@ where('title', 'logo_of_site')->first()->str_value)}}" alt="AdminLTE Logo" class
                                 </p>
                             </a>
                             <ul class="nav nav-treeview">
-                                <li class="nav-item">
-                                    <a href="{{route('ad.index.postedToSpecificAgency.panel', auth()->user()->hasRole('real-state-agent') ? \Modules\User\Entities\User::find(auth()->id())->real_estate_admin_id:auth()->id())}}"
-                                       class="nav-link">
-                                        <i class="fa fa-circle-o nav-icon text-warning"></i>
-                                        <p class="temp-white-text">ویژه کسب و کار شما</p>
-                                    </a>
-                                </li>
+{{--                                <li class="nav-item">--}}
+{{--                                    <a href="{{route('ad.index.postedToSpecificAgency.panel', auth()->user()->hasRole('real-state-agent') ? \Modules\User\Entities\User::find(auth()->id())->real_estate_admin_id:auth()->id())}}"--}}
+{{--                                       class="nav-link">--}}
+{{--                                        <i class="fa fa-circle-o nav-icon text-warning"></i>--}}
+{{--                                        <p class="temp-white-text">ویژه کسب و کار شما</p>--}}
+{{--                                    </a>--}}
+{{--                                </li>--}}
                                 <li class="nav-item">
                                     <a href="{{route('ad.index.postedAgencies.panel')}}" class="nav-link">
                                         <i class="fa fa-circle-o nav-icon text-warning"></i>
-                                        <p class="temp-white-text">درخواست به تمامی کسب و کار ها</p>
+                                        <p class="temp-white-text">درخواست ها</p>
                                     </a>
                                 </li>
                             </ul>
@@ -308,17 +308,17 @@ where('title', 'logo_of_site')->first()->str_value)}}" alt="AdminLTE Logo" class
                                 </p>
                             </a>
                             <ul class="nav nav-treeview">
-                                <li class="nav-item">
-                                    <a href="{{route('applications.index.postedToSpecificAgency.panel', auth()->user()->hasRole('real-state-agent') ? \Modules\User\Entities\User::find(auth()->id())->real_estate_admin_id:auth()->id())}}"
-                                       class="nav-link">
-                                        <i class="fa fa-circle-o nav-icon text-warning"></i>
-                                        <p class="temp-white-text">ویژه کسب و کار شما</p>
-                                    </a>
-                                </li>
+{{--                                <li class="nav-item">--}}
+{{--                                    <a href="{{route('applications.index.postedToSpecificAgency.panel', auth()->user()->hasRole('real-state-agent') ? \Modules\User\Entities\User::find(auth()->id())->real_estate_admin_id:auth()->id())}}"--}}
+{{--                                       class="nav-link">--}}
+{{--                                        <i class="fa fa-circle-o nav-icon text-warning"></i>--}}
+{{--                                        <p class="temp-white-text">ویژه کسب و کار شما</p>--}}
+{{--                                    </a>--}}
+{{--                                </li>--}}
                                 <li class="nav-item">
                                     <a href="{{route('applications.index.realestate')}}" class="nav-link">
                                         <i class="fa fa-circle-o nav-icon text-warning"></i>
-                                        <p class="temp-white-text">درخواست به تمامی کسب و کار ها</p>
+                                        <p class="temp-white-text">درخواست ها</p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
@@ -329,19 +329,6 @@ where('title', 'logo_of_site')->first()->str_value)}}" alt="AdminLTE Logo" class
                                 </li>
                             </ul>
                         </li>
-                        {{--                        <li class="nav-item">--}}
-                        {{--                            <a href="{{route('applications.index.realestate')}}"--}}
-                        {{--                               class="nav-link">--}}
-                        {{--                                <i class="nav-icon fa fa-list-alt text-warning"></i>--}}
-                        {{--                                <p class="temp-white-text">درخواست ها</p>--}}
-                        {{--                            </a>--}}
-                        {{--                        </li>--}}
-                        {{--                        <li class="nav-item">--}}
-                        {{--                            <a href="{{route('applications.seen.realestate')}}" class="nav-link">--}}
-                        {{--                                <i class="nav-icon fa fa-list-alt text-warning"></i>--}}
-                        {{--                                <p class="temp-white-text">درخواست های دیده شده</p>--}}
-                        {{--                            </a>--}}
-                        {{--                        </li>--}}
                     @endcan
                     @can('ArticlesInPanel')
 
